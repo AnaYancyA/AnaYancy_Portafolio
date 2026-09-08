@@ -1,0 +1,800 @@
+﻿/* ==========================================
+   CERTIFICACIONES
+   ========================================== */
+
+.certificaciones-section {
+    padding: 110px 7% 90px;
+    background: #ffffff;
+    min-height: 100vh;
+}
+
+/* ==========================================
+   ENCABEZADO CERTIFICACIONES
+   ========================================== */
+
+.certificaciones-header {
+    position: relative;
+    max-width: 950px;
+    margin: 0 auto 65px;
+    text-align: center;
+}
+
+
+/* ---------- DECORACIÓN SUPERIOR ---------- */
+
+.certificaciones-decoracion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    margin-bottom: 18px;
+}
+
+    .certificaciones-decoracion > span {
+        position: relative;
+        width: 85px;
+        height: 2px;
+        background: #e5d9ff;
+    }
+
+        .certificaciones-decoracion > span::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            width: 7px;
+            height: 7px;
+            background: #7c3aed;
+            border-radius: 50%;
+            transform: translateY(-50%);
+        }
+
+        .certificaciones-decoracion > span:first-child::after {
+            right: -2px;
+        }
+
+        .certificaciones-decoracion > span:last-child::after {
+            left: -2px;
+        }
+
+
+/* ---------- EMBLEMA ---------- */
+
+.certificacion-emblema {
+    width: 58px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    border: 1px solid #e7dcff;
+    border-radius: 50%;
+    color: #6f42c1;
+    font-size: 1.5rem;
+    box-shadow: 0 8px 25px rgba(111, 66, 193, 0.14);
+}
+
+
+/* ---------- MI FORMACIÓN ---------- */
+
+.certificaciones-header .section-label {
+    display: inline-block;
+    margin-bottom: 14px;
+    color: #6f42c1;
+    font-size: 0.85rem;
+    font-weight: 800;
+    letter-spacing: 5px;
+}
+
+
+/* ---------- TÍTULO ---------- */
+
+.certificaciones-header h1 {
+    margin: 0;
+    color: #111111;
+    font-size: clamp(3.2rem, 6vw, 5rem);
+    font-weight: 800;
+    line-height: 1;
+    letter-spacing: -2px;
+}
+
+
+/* ---------- LÍNEA DECORATIVA ---------- */
+
+.titulo-linea {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin: 20px auto 24px;
+}
+
+    .titulo-linea span {
+        width: 75px;
+        height: 5px;
+        background: #6f42c1;
+        border-radius: 20px;
+    }
+
+    .titulo-linea b {
+        width: 7px;
+        height: 7px;
+        display: block;
+        background: #8b5cf6;
+        border-radius: 50%;
+    }
+
+
+/* ---------- DESCRIPCIÓN ---------- */
+
+.certificaciones-header p {
+    max-width: 780px;
+    margin: 0 auto;
+    color: #666666;
+    font-size: 1.1rem;
+    line-height: 1.75;
+}
+
+
+/* ---------- DESTACADOS ---------- */
+
+.certificaciones-destacados {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    margin: 42px auto 0;
+}
+
+.destacado {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 13px;
+    padding: 0 28px;
+}
+
+    .destacado + .destacado {
+        border-left: 1px solid #e8e2f2;
+    }
+
+.destacado-icono {
+    width: 46px;
+    height: 46px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f7f2ff;
+    border-radius: 50%;
+    color: #6f42c1;
+    font-size: 1.25rem;
+}
+
+.destacado strong {
+    display: block;
+    margin-bottom: 3px;
+    color: #6f42c1;
+    font-size: 1.15rem;
+    font-weight: 800;
+    text-align: left;
+}
+
+.destacado span {
+    display: block;
+    color: #555555;
+    font-size: 0.78rem;
+    line-height: 1.4;
+    text-align: left;
+}
+
+
+/* ---------- RESPONSIVE ---------- */
+
+@media (max-width: 700px) {
+
+    .certificaciones-header {
+        margin-bottom: 45px;
+    }
+
+    .certificaciones-decoracion > span {
+        width: 45px;
+    }
+
+    .certificaciones-header h1 {
+        font-size: 3rem;
+    }
+
+    .certificaciones-header p {
+        font-size: 1rem;
+    }
+
+    .certificaciones-destacados {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .destacado {
+        width: 100%;
+    }
+
+        .destacado + .destacado {
+            border-left: none;
+        }
+}
+
+/* ---------- GRID ---------- */
+
+.certificaciones-grid {
+    max-width: 1250px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 35px;
+}
+
+
+/* ---------- TARJETA ---------- */
+
+.certificacion-card {
+    overflow: hidden;
+    background: #ffffff;
+    border: 1px solid #eeeeee;
+    border-radius: 24px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.07);
+    transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+}
+
+    .certificacion-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 45px rgba(111, 66, 193, 0.16);
+        border-color: rgba(111, 66, 193, 0.35);
+    }
+
+
+/* ---------- IMAGEN ---------- */
+
+.certificacion-image {
+    height: 270px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 22px;
+    background: linear-gradient(135deg, #faf8ff 0%, #ffffff 55%, #f5f0ff 100%);
+    overflow: hidden;
+}
+
+    .certificacion-image img {
+        width: 210px;
+        height: 210px;
+        object-fit: contain;
+        transition: transform 0.45s ease, filter 0.45s ease;
+    }
+
+.certificacion-card:hover .certificacion-image img {
+    transform: scale(1.08);
+}
+
+/* ---------- CONTENIDO ---------- */
+
+.certificacion-content {
+    padding: 30px 32px 32px;
+}
+
+.certificacion-type {
+    display: inline-block;
+    margin-bottom: 12px;
+    color: #6f42c1;
+    font-size: 0.7rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.certificacion-content h2 {
+    margin: 0 0 8px;
+    color: #161616;
+    font-size: 1.45rem;
+    line-height: 1.3;
+    font-weight: 750;
+}
+
+.certificacion-content h3 {
+    margin: 0 0 15px;
+    color: #6f42c1;
+    font-size: 0.98rem;
+    font-weight: 600;
+}
+
+.certificacion-date {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 18px;
+    color: #777777;
+    font-size: 0.88rem;
+}
+
+    .certificacion-date i {
+        color: #6f42c1;
+    }
+
+.certificacion-content > p {
+    margin: 0;
+    color: #666666;
+    font-size: 0.93rem;
+    line-height: 1.7;
+}
+
+
+/* ---------- FOOTER TARJETA ---------- */
+
+.certificacion-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 28px;
+    padding-top: 22px;
+    border-top: 1px solid #eeeeee;
+}
+
+.no-expira {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #555555;
+    font-size: 0.8rem;
+    white-space: nowrap;
+}
+
+    .no-expira i {
+        color: #6f42c1;
+    }
+
+
+/* ---------- BOTÓN ---------- */
+
+.btn-certificacion {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 17px;
+    color: #ffffff;
+    background: #111111;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 0.82rem;
+    font-weight: 600;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .btn-certificacion:hover {
+        color: #ffffff;
+        background: #6f42c1;
+        transform: translateY(-2px);
+        box-shadow: 0 8px 20px rgba(111, 66, 193, 0.25);
+    }
+
+    .btn-certificacion i {
+        font-size: 0.75rem;
+    }
+
+
+/* ==========================================
+   RESPONSIVE
+   ========================================== */
+
+@media (max-width: 900px) {
+
+    .certificaciones-section {
+        padding: 90px 5% 70px;
+    }
+
+    .certificaciones-grid {
+        grid-template-columns: 1fr;
+        max-width: 650px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .certificaciones-section {
+        padding: 75px 20px 60px;
+    }
+
+    .certificaciones-header {
+        margin-bottom: 45px;
+    }
+
+        .certificaciones-header h1 {
+            font-size: 2.3rem;
+        }
+
+        .certificaciones-header p {
+            font-size: 0.95rem;
+        }
+
+    .certificacion-image {
+        height: 260px;
+    }
+
+        .certificacion-image img {
+            width: 200px;
+            height: 200px;
+        }
+
+    .certificacion-content {
+        padding: 25px 22px 25px;
+    }
+
+        .certificacion-content h2 {
+            font-size: 1.3rem;
+        }
+
+    .certificacion-footer {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .btn-certificacion {
+        width: 100%;
+    }
+}
+/* ==========================================
+   FORMACIÓN ACADÉMICA
+   ========================================== */
+
+.formacion-academica {
+    max-width: 1250px;
+    margin: 90px auto 0;
+    padding: 55px 50px;
+    background: #faf8ff;
+    border: 1px solid #eee8fa;
+    border-radius: 24px;
+    text-align: center;
+}
+
+.formacion-header {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+    .formacion-header h2 {
+        margin: 5px 0 15px;
+        color: #161616;
+        font-size: 2rem;
+        font-weight: 750;
+    }
+
+    .formacion-header p {
+        max-width: 700px;
+        margin: 0 auto 22px;
+        color: #666;
+        line-height: 1.7;
+    }
+
+.estado-formacion {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 9px 16px;
+    color: #6f42c1;
+    background: #ffffff;
+    border: 1px solid #e6ddf5;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+    .estado-formacion i {
+        font-size: 1rem;
+    }
+
+
+/* ==========================================
+   FORMACIÓN COMPLEMENTARIA
+   ========================================== */
+
+.formacion-complementaria {
+    width: 86%;
+    max-width: 1250px;
+    margin: 90px auto 0;
+}
+
+.formacion-complementaria-header {
+    margin-bottom: 45px;
+    text-align: center;
+}
+
+    .formacion-complementaria-header h2 {
+        margin: 5px 0 15px;
+        color: #161616;
+        font-size: 2rem;
+        font-weight: 750;
+    }
+
+    .formacion-complementaria-header p {
+        max-width: 700px;
+        margin: 0 auto;
+        color: #666;
+        line-height: 1.7;
+    }
+
+
+
+/* ==========================================
+   GRID FORMACIÓN
+   ========================================== */
+
+.formacion-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 35px;
+}
+
+/* ==========================================
+   TARJETAS
+   ========================================== */
+/* ==========================================
+   TARJETAS DE FORMACIÓN
+   ========================================== */
+
+.formacion-card {
+    display: block;
+    overflow: hidden;
+    background: #ffffff;
+    border: 1px solid #eeeeee;
+    border-radius: 22px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+}
+
+    .formacion-card:hover {
+        transform: translateY(-8px);
+        border-color: rgba(111, 66, 193, 0.3);
+        box-shadow: 0 18px 40px rgba(111, 66, 193, 0.13);
+    }
+
+
+/* ==========================================
+   IMAGEN DEL CERTIFICADO
+   ========================================== */
+
+.formacion-icon {
+    width: 100%;
+    min-width: 0;
+    height: 330px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    background: #faf8ff;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+    .formacion-icon img {
+        display: block;
+        width: 85%;
+        height: 85%;
+        object-fit: contain;
+        border-radius: 12px;
+        transition: transform 0.45s ease;
+    }
+
+.formacion-card:hover .formacion-icon img {
+    transform: scale(1.03);
+}
+
+
+/* ==========================================
+   CONTENIDO
+   ========================================== */
+
+.formacion-card-content {
+    padding: 28px 30px 30px;
+}
+
+.formacion-type {
+    display: inline-block;
+    margin-bottom: 10px;
+    color: #6f42c1;
+    font-size: 0.65rem;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.formacion-card h3 {
+    margin: 0 0 7px;
+    color: #171717;
+    font-size: 1.25rem;
+    line-height: 1.35;
+}
+
+.formacion-card h4 {
+    margin: 0 0 14px;
+    color: #6f42c1;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.formacion-card p {
+    margin: 0;
+    color: #666666;
+    font-size: 0.9rem;
+    line-height: 1.7;
+}
+
+
+/* ==========================================
+   INFORMACIÓN
+   ========================================== */
+
+.formacion-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin-top: 20px;
+    padding-top: 17px;
+    border-top: 1px solid #eeeeee;
+}
+
+    .formacion-info span {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+        color: #777777;
+        font-size: 0.8rem;
+    }
+
+    .formacion-info i {
+        color: #6f42c1;
+    }
+
+
+/* ==========================================
+   RESPONSIVE
+   ========================================== */
+
+@media (max-width: 900px) {
+
+    .formacion-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .formacion-academica {
+        margin-top: 65px;
+        padding: 40px 22px;
+    }
+
+    .formacion-header h2,
+    .formacion-complementaria-header h2 {
+        font-size: 1.65rem;
+    }
+
+    .formacion-card {
+        border-radius: 18px;
+    }
+
+    .formacion-icon {
+        width: 100%;
+        min-width: 0;
+        height: 280px;
+        padding: 20px;
+    }
+
+    .formacion-card-content {
+        padding: 24px 22px 25px;
+    }
+
+    .formacion-card h3 {
+        font-size: 1.08rem;
+    }
+}
+
+/* ==========================================
+   VISOR DE CERTIFICADOS
+   ========================================== */
+
+.certificado-preview {
+    cursor: zoom-in;
+}
+
+    .certificado-preview img {
+        cursor: zoom-in;
+    }
+
+
+/* ---------- MODAL ---------- */
+
+.certificado-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.88);
+}
+
+    .certificado-modal.activo {
+        display: flex;
+    }
+
+
+    /* ---------- IMAGEN AMPLIADA ---------- */
+
+    .certificado-modal img {
+        max-width: 90%;
+        max-height: 90vh;
+        object-fit: contain;
+        border-radius: 8px;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+    }
+
+
+/* ---------- BOTÓN CERRAR ---------- */
+
+.certificado-cerrar {
+    position: absolute;
+
+    top: 20px;
+    right: 25px;
+
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.55);
+
+    font-family: Arial, sans-serif;
+    font-size: 38px;
+    font-weight: 300;
+    line-height: 1;
+
+    cursor: pointer;
+
+    z-index: 100000;
+
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.certificado-cerrar:hover {
+    background: #6f42c1;
+
+    border-color: #ffffff;
+
+    transform: rotate(90deg);
+}
+
+/* ==========================================
+   NAVEGACIÓN ENTRE PÁGINAS
+   ========================================== */
+
+.page-navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 52px;
+    margin-top: 55px;
+    margin-bottom: 80px;
+}

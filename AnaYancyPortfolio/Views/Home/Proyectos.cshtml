@@ -1,0 +1,2898 @@
+﻿@{
+    ViewData["Title"] = "Proyectos";
+}
+
+@section Styles {
+    <link rel="stylesheet"
+          href="~/css/proyectos.css"
+          asp-append-version="true" />
+}
+
+<section class="projects-section">
+
+    
+    <div class="container">
+
+        <!-- =====================================================
+         ENCABEZADO
+         ===================================================== -->
+
+        <div class="projects-heading">
+
+            <p class="projects-subtitle">
+                PROYECTOS
+            </p>
+
+            <h1 class="projects-title">
+                Proyectos <span>destacados</span>
+            </h1>
+
+            <p class="projects-intro">
+                Soluciones desarrolladas para resolver necesidades reales
+                mediante tecnología.
+            </p>
+
+        </div>
+
+
+        <!-- =====================================================
+         CARRUSEL
+         ===================================================== -->
+
+        <div id="projectsCarousel"
+             class="projects-carousel">
+
+
+            <!-- =================================================
+             01 · LÁCTEOS DEL CAMPO - APP MÓVIL
+             ================================================= -->
+
+            <div class="project-slide active">
+
+                <div class="row align-items-center g-5">
+
+                    <!-- GALERÍA -->
+
+                    <div class="col-lg-7">
+
+                        <div class="project-showcase">
+
+                            <div class="project-mobile-gallery">
+
+                                <!-- IMAGEN PRINCIPAL -->
+
+                                <div class="project-mobile-main">
+
+                                    <button type="button"
+                                            class="main-image-button"
+                                            data-index="0">
+
+                                        <img src="~/images/proyectos/lacteos-movil-productos.png"
+                                             class="project-image"
+                                             alt="Pantalla de productos de Lácteos del Campo">
+
+                                    </button>
+
+                                    <span class="main-preview">
+                                        <img src="~/images/proyectos/lacteos-movil-productos.png"
+                                             alt="Vista ampliada de productos">
+                                    </span>
+
+                                </div>
+
+                                <!-- MINIATURAS -->
+                                <div class="project-mobile-thumbs"
+                                      id="lacteosThumbs">
+
+                                    <button type="button"
+                                            class="project-mobile-thumb"
+                                            data-index="0"
+                                            data-image="/images/proyectos/lacteos-movil-productos.png"
+                                            data-alt="Pantalla de productos">
+
+                                        <img src="~/images/proyectos/lacteos-movil-productos.png"
+                                             alt="Productos">
+
+                                        <span class="thumb-zoom">⌕</span>
+
+                                        <span class="thumb-preview">
+                                            <img src="~/images/proyectos/lacteos-movil-productos.png"
+                                                 alt="">
+                                        </span>
+
+                                    </button>
+
+
+                                    <button type="button"
+                                            class="project-mobile-thumb"
+                                            data-index="1"
+                                            data-image="/images/proyectos/lacteos-movil-carrito.png"
+                                            data-alt="Carrito de compras">
+
+                                        <img src="~/images/proyectos/lacteos-movil-carrito.png"
+                                             alt="Carrito">
+
+                                        <span class="thumb-zoom">⌕</span>
+
+                                        <span class="thumb-preview">
+                                            <img src="~/images/proyectos/lacteos-movil-carrito.png"
+                                                 alt="">
+                                        </span>
+
+                                    </button>
+
+
+                                    <button type="button"
+                                            class="project-mobile-thumb"
+                                            data-index="2"
+                                            data-image="/images/proyectos/lacteos-movil-datos.png"
+                                            data-alt="Datos del cliente">
+
+                                        <img src="~/images/proyectos/lacteos-movil-datos.png"
+                                             alt="Datos">
+
+                                        <span class="thumb-zoom">⌕</span>
+
+                                        <span class="thumb-preview">
+                                            <img src="~/images/proyectos/lacteos-movil-datos.png"
+                                                 alt="">
+                                        </span>
+
+                                    </button>
+
+
+                                    <button type="button"
+                                            class="project-mobile-thumb"
+                                            data-index="3"
+                                            data-image="/images/proyectos/lacteos-movil-compra.png"
+                                            data-alt="Confirmación de compra">
+
+                                        <img src="~/images/proyectos/lacteos-movil-compra.png"
+                                             alt="Compra">
+
+                                        <span class="thumb-zoom">⌕</span>
+
+                                        <span class="thumb-preview">
+                                            <img src="~/images/proyectos/lacteos-movil-compra.png"
+                                                 alt="">
+                                        </span>
+
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- INFORMACIÓN -->
+
+                    <div class="col-lg-5">
+
+                        <div class="project-info">
+
+                            <p class="project-number">
+                                01 / 08
+                            </p>
+
+                            <h2 class="project-title">
+                                Catálogo y Pedidos Móviles
+                            </h2>
+
+                            <p class="project-description">
+                                Aplicación móvil creada para facilitar la consulta de productos
+                                y realizar pedidos desde el celular. Permite al cliente explorar 
+                                el catálogo y gestionar su compra de forma práctica, rápida y accesible.
+                            </p>
+
+                            <div class="project-tags">
+
+                                <span>Kotlin</span>
+                                <span>Android</span>
+
+                            </div>
+
+                            <div class="project-actions">
+
+                                <a href="https://github.com/AnaYancyA/LacteosDelCampo"
+                                   target="_blank"
+                                   rel="noopener noreferrer"
+                                   class="btn-primary-custom">
+                                    GitHub →
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+     02 · FACTURACIÓN LÁCTEOS DEL CAMPO
+     ================================================= -->
+
+            <div class="project-slide">
+
+                <div class="row align-items-center g-5">
+
+                    <!-- GALERÍA -->
+                    <div class="col-lg-7">
+
+                        <div class="project-showcase">
+
+                            <div class="project-mobile-gallery">
+
+                                <!-- IMAGEN PRINCIPAL -->
+                                <div class="project-mobile-main">
+
+                                    <button type="button"
+                                            class="main-image-button"
+                                            data-index="0">
+
+                                        <img id="facturacionMainImage"
+                                             src="~/images/proyectos/s1.png"
+                                             alt="Sistema de facturación Lácteos del Campo"
+                                             class="project-image">
+
+                                    </button>
+
+                                    <span class="main-preview">
+                                        <img src="~/images/proyectos/s1.png"
+                                             alt="Vista ampliada del sistema de facturación">
+                                    </span>
+
+                                </div>
+
+
+                                <!-- MINIATURAS -->
+                                <div class="project-mobile-thumbs"
+                                     id="facturacionThumbs">
+
+                                    <!-- S1 -->
+                                    <button type="button"
+                                            class="project-mobile-thumb"
+                                            data-index="0"
+                                            data-image="/images/proyectos/s1.png"
+                                            data-alt="Pantalla principal del sistema">
+
+                                        <img src="~/images/proyectos/s1.png"
+                                             alt="Pantalla 1">
+
+                                        <span class="thumb-zoom">⌕</span>
+
+                                        <span class="thumb-preview">
+                                            <img src="~/images/proyectos/s1.png" alt="">
+                                        </span>
+
+                                    </button>
+
+
+                                    <!-- S2 -->
+                                    <button type="button"
+                                            class="project-mobile-thumb"
+                                            data-index="1"
+                                            data-image="/images/proyectos/s2.png"
+                                            data-alt="Pantalla de ventas">
+
+                                        <img src="~/images/proyectos/s2.png"
+                                             alt="Pantalla 2">
+
+                                        <span class="thumb-zoom">⌕</span>
+
+                                        <span class="thumb-preview">
+                                            <img src="~/images/proyectos/s2.png" alt="">
+                                        </span>
+
+                                    </button>
+
+
+                                    <!-- S3 -->
+                                    <button type="button"
+                                            class="project-mobile-thumb"
+                                            data-index="2"
+                                            data-image="/images/proyectos/s3.png"
+                                            data-alt="Detalle de factura">
+
+                                        <img src="~/images/proyectos/s3.png"
+                                             alt="Pantalla 3">
+
+                                        <span class="thumb-zoom">⌕</span>
+
+                                        <span class="thumb-preview">
+                                            <img src="~/images/proyectos/s3.png" alt="">
+                                        </span>
+
+                                    </button>
+
+
+                                    <!-- S4 -->
+                                    <button type="button"
+                                            class="project-mobile-thumb"
+                                            data-index="3"
+                                            data-image="/images/proyectos/s4.png"
+                                            data-alt="Gestión de facturas">
+
+                                        <img src="~/images/proyectos/s4.png"
+                                             alt="Pantalla 4">
+
+                                        <span class="thumb-zoom">⌕</span>
+
+                                        <span class="thumb-preview">
+                                            <img src="~/images/proyectos/s4.png" alt="">
+                                        </span>
+
+                                    </button>
+
+
+                                    <!-- S5 -->
+                                    <button type="button"
+                                            class="project-mobile-thumb"
+                                            data-index="4"
+                                            data-image="/images/proyectos/s5.png"
+                                            data-alt="Inventario">
+
+                                        <img src="~/images/proyectos/s5.png"
+                                             alt="Pantalla 5">
+
+                                        <span class="thumb-zoom">⌕</span>
+
+                                        <span class="thumb-preview">
+                                            <img src="~/images/proyectos/s5.png" alt="">
+                                        </span>
+
+                                    </button>
+
+
+                                    <!-- S6 -->
+                                    <button type="button"
+                                            class="project-mobile-thumb"
+                                            data-index="5"
+                                            data-image="/images/proyectos/s6.png"
+                                            data-alt="Edición de factura">
+
+                                        <img src="~/images/proyectos/s6.png"
+                                             alt="Pantalla 6">
+
+                                        <span class="thumb-zoom">⌕</span>
+
+                                        <span class="thumb-preview">
+                                            <img src="~/images/proyectos/s6.png" alt="">
+                                        </span>
+
+                                    </button>
+
+
+                                    <!-- S7 -->
+                                    <button type="button"
+                                            class="project-mobile-thumb"
+                                            data-index="6"
+                                            data-image="/images/proyectos/s7.png"
+                                            data-alt="Facturación">
+
+                                        <img src="~/images/proyectos/s7.png"
+                                             alt="Pantalla 7">
+
+                                        <span class="thumb-zoom">⌕</span>
+
+                                        <span class="thumb-preview">
+                                            <img src="~/images/proyectos/s7.png" alt="">
+                                        </span>
+
+                                    </button>
+
+
+                                    <!-- S8 -->
+                                    <button type="button"
+                                            class="project-mobile-thumb"
+                                            data-index="7"
+                                            data-image="/images/proyectos/s8.png"
+                                            data-alt="Análisis de ventas">
+
+                                        <img src="~/images/proyectos/s8.png"
+                                             alt="Pantalla 8">
+
+                                        <span class="thumb-zoom">⌕</span>
+
+                                        <span class="thumb-preview">
+                                            <img src="~/images/proyectos/s8.png" alt="">
+                                        </span>
+
+                                    </button>
+
+
+                                    <!-- S9 -->
+                                    <button type="button"
+                                            class="project-mobile-thumb"
+                                            data-index="8"
+                                            data-image="/images/proyectos/s9.png"
+                                            data-alt="Ventas por producto">
+
+                                        <img src="~/images/proyectos/s9.png"
+                                             alt="Pantalla 9">
+
+                                        <span class="thumb-zoom">⌕</span>
+
+                                        <span class="thumb-preview">
+                                            <img src="~/images/proyectos/s9.png" alt="">
+                                        </span>
+
+                                    </button>
+
+
+                                    <!-- S10 -->
+                                    <button type="button"
+                                            class="project-mobile-thumb"
+                                            data-index="9"
+                                            data-image="/images/proyectos/s10.png"
+                                            data-alt="Proyección de ventas">
+
+                                        <img src="~/images/proyectos/s10.png"
+                                             alt="Pantalla 10">
+
+                                        <span class="thumb-zoom">⌕</span>
+
+                                        <span class="thumb-preview">
+                                            <img src="~/images/proyectos/s10.png" alt="">
+                                        </span>
+
+                                    </button>
+
+                                </div>
+
+
+                                <!-- FLECHAS DE MINIATURAS -->
+                                <div class="facturacion-gallery-controls">
+
+                                    <button type="button"
+                                            id="facturacionThumbPrev"
+                                            class="facturacion-thumb-arrow"
+                                            aria-label="Imágenes anteriores">
+                                        ←
+                                    </button>
+
+                                    <span id="facturacionThumbIndicator">
+                                        1–5 / 10
+                                    </span>
+
+                                    <button type="button"
+                                            id="facturacionThumbNext"
+                                            class="facturacion-thumb-arrow"
+                                            aria-label="Imágenes siguientes">
+                                        →
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- INFORMACIÓN -->
+                    <div class="col-lg-5">
+
+                        <div class="project-info">
+
+                            <p class="project-number">
+                                02 / 07
+                            </p>
+
+                            <h2 class="project-title">
+                                Control Comercial · Ventas y Facturación
+                            </h2>
+
+                            <p class="project-description">
+                                Solución diseñada para organizar la operación comercial de un negocio,
+                                facilitando el control de productos, el registro de ventas y la generación de facturas. 
+                                Ayuda a centralizar la información y reducir el trabajo manual en la gestión diaria.
+                            </p>
+
+                            <div class="project-tags">
+
+                                <span>Python</span>
+                                <span>SQL</span>
+                                <span>Tkinter</span>
+                                <span>PDF</span>
+                                <span>Excel</span>
+
+                            </div>
+
+                            <div class="project-actions">
+
+                                <a href="https://github.com/AnaYancyA/facturacion_lacteos_del_campo.py"
+                                   target="_blank"
+                                   rel="noopener noreferrer"
+                                   class="btn-primary-custom">
+                                    GitHub →
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- =================================================
+             03 · SOPORTE DE TIQUETES
+             ================================================= -->
+            <!-- =================================================
+            <!-- =================================================
+            03 · SOPORTE DE TIQUETES
+            ================================================= -->
+
+            <div class="project-slide">
+
+                <div class="row align-items-center g-5">
+
+                    <!-- GALERÍA -->
+
+                    <div class="col-lg-7">
+
+                        <div class="project-showcase">
+
+                            <div class="project-mobile-gallery">
+
+                                <!-- IMAGEN PRINCIPAL -->
+
+                                <div class="project-mobile-main">
+
+                                    <button type="button"
+                                            class="main-image-button"
+                                            data-index="0">
+
+                                        <img id="soporteMainImage"
+                                             src="~/images/proyectos/a3.png"
+                                             alt="Sistema web de soporte técnico y tiquetes"
+                                             class="project-image">
+
+                                    </button>
+
+                                    <span class="main-preview">
+
+                                        <img src="~/images/proyectos/a3.png"
+                                             alt="Vista ampliada del sistema de soporte técnico">
+
+                                    </span>
+
+                                </div>
+
+
+                                <!-- MINIATURAS -->
+
+                                <div class="project-mobile-thumbs"
+                                     id="soporteThumbs">
+
+
+                                    <!-- 01 · A3 · PORTADA -->
+
+                                    <button type="button"
+                                            class="project-mobile-thumb"
+                                            data-index="0"
+                                            data-image="/images/proyectos/a3.png"
+                                            data-alt="Soporte técnico - pantalla principal">
+
+                                        <img src="~/images/proyectos/a3.png"
+                                             alt="Soporte principal">
+
+                                        <span class="thumb-zoom">⌕</span>
+
+                                        <span class="thumb-preview">
+
+                                            <img src="~/images/proyectos/a3.png"
+                                                 alt="">
+
+                                        </span>
+
+                                    </button>
+
+
+                                    <!-- 02 · A1 -->
+
+                                    <button type="button"
+                                            class="project-mobile-thumb"
+                                            data-index="1"
+                                            data-image="/images/proyectos/a1.png"
+                                            data-alt="Soporte técnico - pantalla 1">
+
+                                        <img src="~/images/proyectos/a1.png"
+                                             alt="Soporte 1">
+
+                                        <span class="thumb-zoom">⌕</span>
+
+                                        <span class="thumb-preview">
+
+                                            <img src="~/images/proyectos/a1.png"
+                                                 alt="">
+
+                                        </span>
+
+                                    </button>
+
+
+                                    <!-- 03 · A2 -->
+
+                                    <button type="button"
+                                            class="project-mobile-thumb"
+                                            data-index="2"
+                                            data-image="/images/proyectos/a2.png"
+                                            data-alt="Soporte técnico - pantalla 2">
+
+                                        <img src="~/images/proyectos/a2.png"
+                                             alt="Soporte 2">
+
+                                        <span class="thumb-zoom">⌕</span>
+
+                                        <span class="thumb-preview">
+
+                                            <img src="~/images/proyectos/a2.png"
+                                                 alt="">
+
+                                        </span>
+
+                                    </button>
+
+
+                                    <!-- 04 · A4 -->
+
+                                    <button type="button"
+                                            class="project-mobile-thumb"
+                                            data-index="3"
+                                            data-image="/images/proyectos/a4.png"
+                                            data-alt="Soporte técnico - pantalla 4">
+
+                                        <img src="~/images/proyectos/a4.png"
+                                             alt="Soporte 4">
+
+                                        <span class="thumb-zoom">⌕</span>
+
+                                        <span class="thumb-preview">
+
+                                            <img src="~/images/proyectos/a4.png"
+                                                 alt="">
+
+                                        </span>
+
+                                    </button>
+
+
+                                    <!-- 05 · A5 -->
+
+                                    <button type="button"
+                                            class="project-mobile-thumb"
+                                            data-index="4"
+                                            data-image="/images/proyectos/a5.png"
+                                            data-alt="Soporte técnico - pantalla 5">
+
+                                        <img src="~/images/proyectos/a5.png"
+                                             alt="Soporte 5">
+
+                                        <span class="thumb-zoom">⌕</span>
+
+                                        <span class="thumb-preview">
+
+                                            <img src="~/images/proyectos/a5.png"
+                                                 alt="">
+
+                                        </span>
+
+                                    </button>
+
+
+                                    <!-- 06 · A6 -->
+
+                                    <button type="button"
+                                            class="project-mobile-thumb"
+                                            data-index="5"
+                                            data-image="/images/proyectos/a6.png"
+                                            data-alt="Soporte técnico - pantalla 6">
+
+                                        <img src="~/images/proyectos/a6.png"
+                                             alt="Soporte 6">
+
+                                        <span class="thumb-zoom">⌕</span>
+
+                                        <span class="thumb-preview">
+
+                                            <img src="~/images/proyectos/a6.png"
+                                                 alt="">
+
+                                        </span>
+
+                                    </button>
+
+
+                                    <!-- 07 · A7 -->
+
+                                    <button type="button"
+                                            class="project-mobile-thumb"
+                                            data-index="6"
+                                            data-image="/images/proyectos/a7.png"
+                                            data-alt="Soporte técnico - pantalla 7">
+
+                                        <img src="~/images/proyectos/a7.png"
+                                             alt="Soporte 7">
+
+                                        <span class="thumb-zoom">⌕</span>
+
+                                        <span class="thumb-preview">
+
+                                            <img src="~/images/proyectos/a7.png"
+                                                 alt="">
+
+                                        </span>
+
+                                    </button>
+
+
+                                    <!-- 08 · A8 -->
+
+                                    <button type="button"
+                                            class="project-mobile-thumb"
+                                            data-index="7"
+                                            data-image="/images/proyectos/a8.png"
+                                            data-alt="Soporte técnico - pantalla 8">
+
+                                        <img src="~/images/proyectos/a8.png"
+                                             alt="Soporte 8">
+
+                                        <span class="thumb-zoom">⌕</span>
+
+                                        <span class="thumb-preview">
+
+                                            <img src="~/images/proyectos/a8.png"
+                                                 alt="">
+
+                                        </span>
+
+                                    </button>
+
+
+                                    <!-- 09 · A9 -->
+
+                                    <button type="button"
+                                            class="project-mobile-thumb"
+                                            data-index="8"
+                                            data-image="/images/proyectos/a9.png"
+                                            data-alt="Soporte técnico - pantalla 9">
+
+                                        <img src="~/images/proyectos/a9.png"
+                                             alt="Soporte 9">
+
+                                        <span class="thumb-zoom">⌕</span>
+
+                                        <span class="thumb-preview">
+
+                                            <img src="~/images/proyectos/a9.png"
+                                                 alt="">
+
+                                        </span>
+
+                                    </button>
+
+
+                                    <!-- 10 · A10 -->
+
+                                    <button type="button"
+                                            class="project-mobile-thumb"
+                                            data-index="9"
+                                            data-image="/images/proyectos/a10.png"
+                                            data-alt="Soporte técnico - pantalla 10">
+
+                                        <img src="~/images/proyectos/a10.png"
+                                             alt="Soporte 10">
+
+                                        <span class="thumb-zoom">⌕</span>
+
+                                        <span class="thumb-preview">
+
+                                            <img src="~/images/proyectos/a10.png"
+                                                 alt="">
+
+                                        </span>
+
+                                    </button>
+
+
+                                </div>
+
+
+                                <!-- CONTROLES DE MINIATURAS -->
+
+                                <div class="facturacion-gallery-controls soporte-gallery-controls">
+
+                                    <button type="button"
+                                            id="soporteThumbPrev"
+                                            class="facturacion-thumb-arrow"
+                                            aria-label="Imágenes anteriores">
+                                        ←
+                                    </button>
+
+                                    <span id="soporteThumbIndicator">
+                                        1–5 / 10
+                                    </span>
+
+                                    <button type="button"
+                                            id="soporteThumbNext"
+                                            class="facturacion-thumb-arrow"
+                                            aria-label="Imágenes siguientes">
+                                        →
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- INFORMACIÓN -->
+
+                    <div class="col-lg-5">
+
+                        <div class="project-info">
+
+                            <p class="project-number">
+                                03 / 08
+                            </p>
+
+                            <h2 class="project-title">
+                                Soporte Inteligente · Gestión de Tiquetes
+                            </h2>
+
+                            <p class="project-description">
+                                Sistema web diseñado para organizar y dar seguimiento
+                                a solicitudes de soporte técnico. Permite centralizar
+                                los reportes, controlar su estado y facilitar la atención
+                                de incidencias de forma más ordenada y eficiente.
+                            </p>
+
+                            <div class="project-tags">
+
+                                <span>PHP</span>
+                                <span>MySQL</span>
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+
+                            </div>
+
+                            <div class="project-actions">
+
+                                <a href="https://github.com/AnaYancyA/SistemaSoporteTiquetes"
+                                   target="_blank"
+                                   rel="noopener noreferrer"
+                                   class="btn-primary-custom">
+
+                                    GitHub →
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- =================================================
+     04 · API BIBLIOTECA
+     ================================================= -->
+
+            <div class="project-slide">
+
+                <div class="row align-items-center g-5">
+
+                    <!-- ==========================================
+             GALERÍA
+             ========================================== -->
+
+                    <div class="col-lg-7">
+
+                        <div class="project-showcase">
+
+                            <div class="project-mobile-gallery">
+
+                                <!-- ==================================
+                         IMAGEN PRINCIPAL
+                         ================================== -->
+
+                                <div class="project-mobile-main">
+
+                                    <button type="button"
+                                            class="main-image-button"
+                                            data-index="0">
+
+                                        <img id="bibliotecaMainImage"
+                                             src="~/images/proyectos/m11.png"
+                                             alt="API Biblioteca - pantalla principal"
+                                             class="project-image">
+
+                                    </button>
+
+                                    <span class="main-preview">
+
+                                        <img src="~/images/proyectos/m11.png"
+                                             alt="Vista ampliada de API Biblioteca">
+
+                                    </span>
+
+                                </div>
+
+
+                                <!-- ==================================
+                         MINIATURAS
+                         ================================== -->
+
+                                <div class="project-mobile-thumbs"
+                                     id="bibliotecaThumbs">
+
+
+                                    <!-- ==================================
+                             01 · M11 · PORTADA
+                             ================================== -->
+
+                                    <button type="button"
+                                            class="project-mobile-thumb"
+                                            data-index="0"
+                                            data-image="/images/proyectos/m11.png"
+                                            data-alt="API Biblioteca - pantalla principal">
+
+                                        <img src="~/images/proyectos/m11.png"
+                                             alt="API Biblioteca principal">
+
+                                        <span class="thumb-zoom">⌕</span>
+
+                                        <span class="thumb-preview">
+
+                                            <img src="~/images/proyectos/m11.png"
+                                                 alt="">
+
+                                        </span>
+
+                                    </button>
+
+
+                                    <!-- ==================================
+                             02 · M1
+                             ================================== -->
+
+                                    <button type="button"
+                                            class="project-mobile-thumb"
+                                            data-index="1"
+                                            data-image="/images/proyectos/m1.png"
+                                            data-alt="API Biblioteca - pantalla 1">
+
+                                        <img src="~/images/proyectos/m1.png"
+                                             alt="API Biblioteca 1">
+
+                                        <span class="thumb-zoom">⌕</span>
+
+                                        <span class="thumb-preview">
+
+                                            <img src="~/images/proyectos/m1.png"
+                                                 alt="">
+
+                                        </span>
+
+                                    </button>
+
+
+                                    <!-- ==================================
+                             03 · M2
+                             ================================== -->
+
+                                    <button type="button"
+                                            class="project-mobile-thumb"
+                                            data-index="2"
+                                            data-image="/images/proyectos/m2.png"
+                                            data-alt="API Biblioteca - pantalla 2">
+
+                                        <img src="~/images/proyectos/m2.png"
+                                             alt="API Biblioteca 2">
+
+                                        <span class="thumb-zoom">⌕</span>
+
+                                        <span class="thumb-preview">
+
+                                            <img src="~/images/proyectos/m2.png"
+                                                 alt="">
+
+                                        </span>
+
+                                    </button>
+
+
+                                    <!-- ==================================
+                             04 · M3
+                             ================================== -->
+
+                                    <button type="button"
+                                            class="project-mobile-thumb"
+                                            data-index="3"
+                                            data-image="/images/proyectos/m3.png"
+                                            data-alt="API Biblioteca - pantalla 3">
+
+                                        <img src="~/images/proyectos/m3.png"
+                                             alt="API Biblioteca 3">
+
+                                        <span class="thumb-zoom">⌕</span>
+
+                                        <span class="thumb-preview">
+
+                                            <img src="~/images/proyectos/m3.png"
+                                                 alt="">
+
+                                        </span>
+
+                                    </button>
+
+
+                                    <!-- ==================================
+                             05 · M4
+                             ================================== -->
+
+                                    <button type="button"
+                                            class="project-mobile-thumb"
+                                            data-index="4"
+                                            data-image="/images/proyectos/m4.png"
+                                            data-alt="API Biblioteca - pantalla 4">
+
+                                        <img src="~/images/proyectos/m4.png"
+                                             alt="API Biblioteca 4">
+
+                                        <span class="thumb-zoom">⌕</span>
+
+                                        <span class="thumb-preview">
+
+                                            <img src="~/images/proyectos/m4.png"
+                                                 alt="">
+
+                                        </span>
+
+                                    </button>
+
+
+                                    <!-- ==================================
+                             06 · M5
+                             ================================== -->
+
+                                    <button type="button"
+                                            class="project-mobile-thumb"
+                                            data-index="5"
+                                            data-image="/images/proyectos/m5.png"
+                                            data-alt="API Biblioteca - pantalla 5">
+
+                                        <img src="~/images/proyectos/m5.png"
+                                             alt="API Biblioteca 5">
+
+                                        <span class="thumb-zoom">⌕</span>
+
+                                        <span class="thumb-preview">
+
+                                            <img src="~/images/proyectos/m5.png"
+                                                 alt="">
+
+                                        </span>
+
+                                    </button>
+
+
+                                    <!-- ==================================
+                             07 · M6
+                             ================================== -->
+
+                                    <button type="button"
+                                            class="project-mobile-thumb"
+                                            data-index="6"
+                                            data-image="/images/proyectos/m6.png"
+                                            data-alt="API Biblioteca - pantalla 6">
+
+                                        <img src="~/images/proyectos/m6.png"
+                                             alt="API Biblioteca 6">
+
+                                        <span class="thumb-zoom">⌕</span>
+
+                                        <span class="thumb-preview">
+
+                                            <img src="~/images/proyectos/m6.png"
+                                                 alt="">
+
+                                        </span>
+
+                                    </button>
+
+
+                                    <!-- ==================================
+                             08 · M7
+                             ================================== -->
+
+                                    <button type="button"
+                                            class="project-mobile-thumb"
+                                            data-index="7"
+                                            data-image="/images/proyectos/m7.png"
+                                            data-alt="API Biblioteca - pantalla 7">
+
+                                        <img src="~/images/proyectos/m7.png"
+                                             alt="API Biblioteca 7">
+
+                                        <span class="thumb-zoom">⌕</span>
+
+                                        <span class="thumb-preview">
+
+                                            <img src="~/images/proyectos/m7.png"
+                                                 alt="">
+
+                                        </span>
+
+                                    </button>
+
+
+                                    <!-- ==================================
+                             09 · M8
+                             ================================== -->
+
+                                    <button type="button"
+                                            class="project-mobile-thumb"
+                                            data-index="8"
+                                            data-image="/images/proyectos/m8.png"
+                                            data-alt="API Biblioteca - pantalla 8">
+
+                                        <img src="~/images/proyectos/m8.png"
+                                             alt="API Biblioteca 8">
+
+                                        <span class="thumb-zoom">⌕</span>
+
+                                        <span class="thumb-preview">
+
+                                            <img src="~/images/proyectos/m8.png"
+                                                 alt="">
+
+                                        </span>
+
+                                    </button>
+
+
+                                    <!-- ==================================
+                             10 · M10
+                             ================================== -->
+
+                                    <button type="button"
+                                            class="project-mobile-thumb"
+                                            data-index="9"
+                                            data-image="/images/proyectos/m10.png"
+                                            data-alt="API Biblioteca - pantalla 10">
+
+                                        <img src="~/images/proyectos/m10.png"
+                                             alt="API Biblioteca 10">
+
+                                        <span class="thumb-zoom">⌕</span>
+
+                                        <span class="thumb-preview">
+
+                                            <img src="~/images/proyectos/m10.png"
+                                                 alt="">
+
+                                        </span>
+
+                                    </button>
+
+
+                                </div>
+
+
+                                <!-- ==================================
+                         CONTROLES DE MINIATURAS
+                         ================================== -->
+
+                                <div class="facturacion-gallery-controls biblioteca-gallery-controls">
+
+                                    <button type="button"
+                                            id="bibliotecaThumbPrev"
+                                            class="facturacion-thumb-arrow"
+                                            aria-label="Imágenes anteriores">
+                                        ←
+                                    </button>
+
+                                    <span id="bibliotecaThumbIndicator">
+                                        1–5 / 10
+                                    </span>
+
+                                    <button type="button"
+                                            id="bibliotecaThumbNext"
+                                            class="facturacion-thumb-arrow"
+                                            aria-label="Imágenes siguientes">
+                                        →
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ==========================================
+             INFORMACIÓN DEL PROYECTO
+             ========================================== -->
+
+                    <div class="col-lg-5">
+
+                        <div class="project-info">
+
+                            <p class="project-number">
+                                04 / 08
+                            </p>
+
+                            <h2 class="project-title">
+                                Biblioteca Conectada · API REST
+                            </h2>
+
+                            <p class="project-description">
+                                API desarrollada para centralizar y facilitar la gestión
+                                de información bibliotecaria. Permite consultar y administrar
+                                los datos mediante servicios web, facilitando la comunicación
+                                entre diferentes aplicaciones y sistemas.
+                            </p>
+
+
+                            <!-- TECNOLOGÍAS -->
+
+                            <div class="project-tags">
+
+                                <span>C#</span>
+                                <span>.NET</span>
+                                <span>ASP.NET Core</span>
+                                <span>API REST</span>
+                                <span>SQL</span>
+
+                            </div>
+
+
+                            <!-- BOTONES -->
+
+                            <div class="project-actions">
+
+                                <a href="https://github.com/AnaYancyA/APIBIBLIOTECA"
+                                   target="_blank"
+                                   rel="noopener noreferrer"
+                                   class="btn-primary-custom">
+
+                                    GitHub →
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- =================================================
+            <!-- =================================================
+            05 · FINCA AL DÍA · GESTIÓN DE INVENTARIO
+            ================================================= -->
+
+            <div class="project-slide">
+
+                <div class="row align-items-center g-5">
+
+                    <!-- ==========================================
+             GALERÍA
+             ========================================== -->
+
+                    <div class="col-lg-7">
+
+                        <div class="project-showcase">
+
+                            <div class="project-mobile-gallery">
+
+                                <!-- ==================================
+                         IMAGEN PRINCIPAL
+                         ================================== -->
+
+                                <div class="project-mobile-main">
+
+                                    <button type="button"
+                                            class="main-image-button"
+                                            data-index="0">
+
+                                        <img id="fincaMainImage"
+                                             src="~/images/proyectos/f3.png"
+                                             alt="Finca al Día - pantalla principal"
+                                             class="project-image">
+
+                                    </button>
+
+                                    <span class="main-preview">
+
+                                        <img src="~/images/proyectos/f3.png"
+                                             alt="Vista ampliada de Finca al Día">
+
+                                    </span>
+
+                                </div>
+
+
+                                <!-- ==================================
+                         MINIATURAS
+                         ================================== -->
+
+                                <div class="project-mobile-thumbs"
+                                     id="fincaThumbs">
+
+
+                                    <!-- ==================================
+                             01 · F3 · PORTADA
+                             ================================== -->
+
+                                    <button type="button"
+                                            class="project-mobile-thumb"
+                                            data-index="0"
+                                            data-image="/images/proyectos/f3.png"
+                                            data-alt="Finca al Día - pantalla principal">
+
+                                        <img src="~/images/proyectos/f3.png"
+                                             alt="Finca al Día principal">
+
+                                        <span class="thumb-zoom">⌕</span>
+
+                                        <span class="thumb-preview">
+
+                                            <img src="~/images/proyectos/f3.png"
+                                                 alt="">
+
+                                        </span>
+
+                                    </button>
+
+
+                                    <!-- ==================================
+                             02 · F1
+                             ================================== -->
+
+                                    <button type="button"
+                                            class="project-mobile-thumb"
+                                            data-index="1"
+                                            data-image="/images/proyectos/f1.png"
+                                            data-alt="Finca al Día - pantalla 1">
+
+                                        <img src="~/images/proyectos/f1.png"
+                                             alt="Finca al Día 1">
+
+                                        <span class="thumb-zoom">⌕</span>
+
+                                        <span class="thumb-preview">
+
+                                            <img src="~/images/proyectos/f1.png"
+                                                 alt="">
+
+                                        </span>
+
+                                    </button>
+
+
+                                    <!-- ==================================
+                             03 · F2
+                             ================================== -->
+
+                                    <button type="button"
+                                            class="project-mobile-thumb"
+                                            data-index="2"
+                                            data-image="/images/proyectos/f2.png"
+                                            data-alt="Finca al Día - pantalla 2">
+
+                                        <img src="~/images/proyectos/f2.png"
+                                             alt="Finca al Día 2">
+
+                                        <span class="thumb-zoom">⌕</span>
+
+                                        <span class="thumb-preview">
+
+                                            <img src="~/images/proyectos/f2.png"
+                                                 alt="">
+
+                                        </span>
+
+                                    </button>
+
+
+                                    <!-- ==================================
+                             04 · F4
+                             ================================== -->
+
+                                    <button type="button"
+                                            class="project-mobile-thumb"
+                                            data-index="3"
+                                            data-image="/images/proyectos/f4.png"
+                                            data-alt="Finca al Día - pantalla 4">
+
+                                        <img src="~/images/proyectos/f4.png"
+                                             alt="Finca al Día 4">
+
+                                        <span class="thumb-zoom">⌕</span>
+
+                                        <span class="thumb-preview">
+
+                                            <img src="~/images/proyectos/f4.png"
+                                                 alt="">
+
+                                        </span>
+
+                                    </button>
+
+
+                                    <!-- ==================================
+                             05 · F5
+                             ================================== -->
+
+                                    <button type="button"
+                                            class="project-mobile-thumb"
+                                            data-index="4"
+                                            data-image="/images/proyectos/f5.png"
+                                            data-alt="Finca al Día - pantalla 5">
+
+                                        <img src="~/images/proyectos/f5.png"
+                                             alt="Finca al Día 5">
+
+                                        <span class="thumb-zoom">⌕</span>
+
+                                        <span class="thumb-preview">
+
+                                            <img src="~/images/proyectos/f5.png"
+                                                 alt="">
+
+                                        </span>
+
+                                    </button>
+
+
+                                    <!-- ==================================
+                             06 · F6
+                             ================================== -->
+
+                                    <button type="button"
+                                            class="project-mobile-thumb"
+                                            data-index="5"
+                                            data-image="/images/proyectos/f6.png"
+                                            data-alt="Finca al Día - pantalla 6">
+
+                                        <img src="~/images/proyectos/f6.png"
+                                             alt="Finca al Día 6">
+
+                                        <span class="thumb-zoom">⌕</span>
+
+                                        <span class="thumb-preview">
+
+                                            <img src="~/images/proyectos/f6.png"
+                                                 alt="">
+
+                                        </span>
+
+                                    </button>
+
+
+                                    <!-- ==================================
+                             07 · F7
+                             ================================== -->
+
+                                    <button type="button"
+                                            class="project-mobile-thumb"
+                                            data-index="6"
+                                            data-image="/images/proyectos/f7.png"
+                                            data-alt="Finca al Día - pantalla 7">
+
+                                        <img src="~/images/proyectos/f7.png"
+                                             alt="Finca al Día 7">
+
+                                        <span class="thumb-zoom">⌕</span>
+
+                                        <span class="thumb-preview">
+
+                                            <img src="~/images/proyectos/f7.png"
+                                                 alt="">
+
+                                        </span>
+
+                                    </button>
+
+
+                                    <!-- ==================================
+                             08 · F8
+                             ================================== -->
+
+                                    <button type="button"
+                                            class="project-mobile-thumb"
+                                            data-index="7"
+                                            data-image="/images/proyectos/f8.png"
+                                            data-alt="Finca al Día - pantalla 8">
+
+                                        <img src="~/images/proyectos/f8.png"
+                                             alt="Finca al Día 8">
+
+                                        <span class="thumb-zoom">⌕</span>
+
+                                        <span class="thumb-preview">
+
+                                            <img src="~/images/proyectos/f8.png"
+                                                 alt="">
+
+                                        </span>
+
+                                    </button>
+
+
+                                    <!-- ==================================
+                             09 · F9
+                             ================================== -->
+
+                                    <button type="button"
+                                            class="project-mobile-thumb"
+                                            data-index="8"
+                                            data-image="/images/proyectos/f9.png"
+                                            data-alt="Finca al Día - pantalla 9">
+
+                                        <img src="~/images/proyectos/f9.png"
+                                             alt="Finca al Día 9">
+
+                                        <span class="thumb-zoom">⌕</span>
+
+                                        <span class="thumb-preview">
+
+                                            <img src="~/images/proyectos/f9.png"
+                                                 alt="">
+
+                                        </span>
+
+                                    </button>
+
+
+                                    <!-- ==================================
+                             10 · F10
+                             ================================== -->
+
+                                    <button type="button"
+                                            class="project-mobile-thumb"
+                                            data-index="9"
+                                            data-image="/images/proyectos/f10.png"
+                                            data-alt="Finca al Día - pantalla 10">
+
+                                        <img src="~/images/proyectos/f10.png"
+                                             alt="Finca al Día 10">
+
+                                        <span class="thumb-zoom">⌕</span>
+
+                                        <span class="thumb-preview">
+
+                                            <img src="~/images/proyectos/f10.png"
+                                                 alt="">
+
+                                        </span>
+
+                                    </button>
+
+
+                                </div>
+
+
+                                <!-- ==================================
+                         CONTROLES DE MINIATURAS
+                         ================================== -->
+
+                                <div class="facturacion-gallery-controls finca-gallery-controls">
+
+                                    <button type="button"
+                                            id="fincaThumbPrev"
+                                            class="facturacion-thumb-arrow"
+                                            aria-label="Imágenes anteriores">
+                                        ←
+                                    </button>
+
+                                    <span id="fincaThumbIndicator">
+                                        1–5 / 10
+                                    </span>
+
+                                    <button type="button"
+                                            id="fincaThumbNext"
+                                            class="facturacion-thumb-arrow"
+                                            aria-label="Imágenes siguientes">
+                                        →
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ==========================================
+             INFORMACIÓN DEL PROYECTO
+             ========================================== -->
+
+                    <div class="col-lg-5">
+
+                        <div class="project-info">
+
+                            <p class="project-number">
+                                05 / 08
+                            </p>
+
+                            <h2 class="project-title">
+                                Finca al Día · Gestión de Inventario
+                            </h2>
+
+                            <p class="project-description">
+                                Sistema desarrollado para facilitar la gestión y el control
+                                de información dentro de una finca. Permite organizar los
+                                registros y consultar la información de manera práctica,
+                                centralizada y eficiente.
+                            </p>
+
+
+                            <!-- TECNOLOGÍAS -->
+
+                            <div class="project-tags">
+
+                                <span>C#</span>
+                                <span>.NET</span>
+                                <span>ASP.NET Core</span>
+                                <span>SQL</span>
+
+                            </div>
+
+
+                            <!-- BOTONES -->
+
+                            <div class="project-actions">
+
+                                <a href="https://github.com/AnaYancyA/Sistema-Gestion-Inventario-Finca-"
+                                   target="_blank"
+                                   rel="noopener noreferrer"
+                                   class="btn-primary-custom">
+
+                                    GitHub →
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- =================================================
+     06 · REGISTRO DE VACAS
+     ================================================= -->
+
+            <div class="project-slide">
+
+                <div class="row align-items-center g-5">
+
+                    <!-- ==========================================
+             GALERÍA
+             ========================================== -->
+
+                    <div class="col-lg-7">
+
+                        <div class="project-showcase">
+
+                            <div class="project-mobile-gallery">
+
+                                <!-- ==================================
+                         IMAGEN PRINCIPAL
+                         ================================== -->
+
+                                <div class="project-mobile-main">
+
+                                    <button type="button"
+                                            class="main-image-button"
+                                            data-index="0">
+
+                                        <img id="vacasMainImage"
+                                             src="~/images/proyectos/r1.png"
+                                             alt="Registro de Vacas"
+                                             class="project-image">
+
+                                    </button>
+
+                                    <span class="main-preview">
+
+                                        <img src="~/images/proyectos/r1.png"
+                                             alt="Vista ampliada de Registro de Vacas">
+
+                                    </span>
+
+                                </div>
+
+
+                                <!-- ==================================
+                         MINIATURAS
+                         ================================== -->
+
+                                <div class="project-mobile-thumbs"
+                                     id="vacasThumbs">
+
+
+                                    <!-- 01 · R1 · PORTADA -->
+
+                                    <button type="button"
+                                            class="project-mobile-thumb"
+                                            data-index="0"
+                                            data-image="/images/proyectos/r1.png"
+                                            data-alt="Registro de Vacas - pantalla principal">
+
+                                        <img src="~/images/proyectos/r1.png"
+                                             alt="Registro de Vacas 1">
+
+                                        <span class="thumb-zoom">⌕</span>
+
+                                        <span class="thumb-preview">
+
+                                            <img src="~/images/proyectos/r1.png"
+                                                 alt="">
+
+                                        </span>
+
+                                    </button>
+
+
+                                    <!-- 02 · R2 -->
+
+                                    <button type="button"
+                                            class="project-mobile-thumb"
+                                            data-index="1"
+                                            data-image="/images/proyectos/r2.png"
+                                            data-alt="Registro de Vacas - pantalla 2">
+
+                                        <img src="~/images/proyectos/r2.png"
+                                             alt="Registro de Vacas 2">
+
+                                        <span class="thumb-zoom">⌕</span>
+
+                                        <span class="thumb-preview">
+
+                                            <img src="~/images/proyectos/r2.png"
+                                                 alt="">
+
+                                        </span>
+
+                                    </button>
+
+
+                                    <!-- 03 · R3 -->
+
+                                    <button type="button"
+                                            class="project-mobile-thumb"
+                                            data-index="2"
+                                            data-image="/images/proyectos/r3.png"
+                                            data-alt="Registro de Vacas - pantalla 3">
+
+                                        <img src="~/images/proyectos/r3.png"
+                                             alt="Registro de Vacas 3">
+
+                                        <span class="thumb-zoom">⌕</span>
+
+                                        <span class="thumb-preview">
+
+                                            <img src="~/images/proyectos/r3.png"
+                                                 alt="">
+
+                                        </span>
+
+                                    </button>
+
+
+                                    <!-- 04 · R4 -->
+
+                                    <button type="button"
+                                            class="project-mobile-thumb"
+                                            data-index="3"
+                                            data-image="/images/proyectos/r4.png"
+                                            data-alt="Registro de Vacas - pantalla 4">
+
+                                        <img src="~/images/proyectos/r4.png"
+                                             alt="Registro de Vacas 4">
+
+                                        <span class="thumb-zoom">⌕</span>
+
+                                        <span class="thumb-preview">
+
+                                            <img src="~/images/proyectos/r4.png"
+                                                 alt="">
+
+                                        </span>
+
+                                    </button>
+
+
+                                    <!-- 05 · R5 -->
+
+                                    <button type="button"
+                                            class="project-mobile-thumb"
+                                            data-index="4"
+                                            data-image="/images/proyectos/r5.png"
+                                            data-alt="Registro de Vacas - pantalla 5">
+
+                                        <img src="~/images/proyectos/r5.png"
+                                             alt="Registro de Vacas 5">
+
+                                        <span class="thumb-zoom">⌕</span>
+
+                                        <span class="thumb-preview">
+
+                                            <img src="~/images/proyectos/r5.png"
+                                                 alt="">
+
+                                        </span>
+
+                                    </button>
+
+
+                                    <!-- 06 · R6 -->
+
+                                    <button type="button"
+                                            class="project-mobile-thumb"
+                                            data-index="5"
+                                            data-image="/images/proyectos/r6.png"
+                                            data-alt="Registro de Vacas - pantalla 6">
+
+                                        <img src="~/images/proyectos/r6.png"
+                                             alt="Registro de Vacas 6">
+
+                                        <span class="thumb-zoom">⌕</span>
+
+                                        <span class="thumb-preview">
+
+                                            <img src="~/images/proyectos/r6.png"
+                                                 alt="">
+
+                                        </span>
+
+                                    </button>
+
+
+                                </div>
+
+
+                                <!-- ==================================
+                         CONTROLES DE MINIATURAS
+                         ================================== -->
+
+                                <div class="facturacion-gallery-controls vacas-gallery-controls">
+
+                                    <button type="button"
+                                            id="vacasThumbPrev"
+                                            class="facturacion-thumb-arrow"
+                                            aria-label="Imágenes anteriores">
+                                        ←
+                                    </button>
+
+                                    <span id="vacasThumbIndicator">
+                                        1–5 / 6
+                                    </span>
+
+                                    <button type="button"
+                                            id="vacasThumbNext"
+                                            class="facturacion-thumb-arrow"
+                                            aria-label="Imágenes siguientes">
+                                        →
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ==========================================
+             INFORMACIÓN
+             ========================================== -->
+
+                    <div class="col-lg-5">
+
+                        <div class="project-info">
+
+                            <p class="project-number">
+                                06 / 08
+                            </p>
+
+                            <h2 class="project-title">
+                                Control Ganadero · Registro de Vacas
+                            </h2>
+
+                            <p class="project-description">
+                                Aplicación orientada al registro y organización
+                                de información de vacas, facilitando el control
+                                y consulta de los datos registrados.
+                            </p>
+
+
+                            <!-- TECNOLOGÍAS -->
+
+                            <div class="project-tags">
+
+                                <span>C#</span>
+                                <span>.NET</span>
+                                <span>SQL</span>
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+
+                            </div>
+
+
+                            <!-- GITHUB -->
+
+                            <div class="project-actions">
+
+                                <a href="https://github.com/AnaYancyA/RegistroVacas.py"
+                                   target="_blank"
+                                   rel="noopener noreferrer"
+                                   class="btn-primary-custom">
+
+                                    GitHub →
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- =================================================
+     07 · SITIO WEB INFORMATIVO DE CARNICERÍA
+     ================================================= -->
+
+            <div class="project-slide">
+
+                <div class="row align-items-center g-5">
+
+                    <!-- ==========================================
+             GALERÍA
+             ========================================== -->
+
+                    <div class="col-lg-7">
+
+                        <div class="project-showcase">
+
+                            <div class="project-mobile-gallery">
+
+                                <!-- ==================================
+                         IMAGEN PRINCIPAL
+                         ================================== -->
+
+                                <div class="project-mobile-main">
+
+                                    <button type="button"
+                                            class="main-image-button"
+                                            data-index="0">
+
+                                        <img id="carniceriaMainImage"
+                                             src="~/images/proyectos/c1.png"
+                                             alt="Sitio Web Informativo de Carnicería"
+                                             class="project-image">
+
+                                    </button>
+
+                                    <span class="main-preview">
+
+                                        <img src="~/images/proyectos/c1.png"
+                                             alt="Vista ampliada del sitio web de carnicería">
+
+                                    </span>
+
+                                </div>
+
+
+                                <!-- ==================================
+                         MINIATURAS
+                         ================================== -->
+
+                                <div class="project-mobile-thumbs"
+                                     id="carniceriaThumbs">
+
+
+                                    <!-- 01 · C1 · PORTADA -->
+
+                                    <button type="button"
+                                            class="project-mobile-thumb"
+                                            data-index="0"
+                                            data-image="/images/proyectos/c1.png"
+                                            data-alt="Carnicería - pantalla principal">
+
+                                        <img src="~/images/proyectos/c1.png"
+                                             alt="Carnicería 1">
+
+                                        <span class="thumb-zoom">⌕</span>
+
+                                        <span class="thumb-preview">
+
+                                            <img src="~/images/proyectos/c1.png"
+                                                 alt="">
+
+                                        </span>
+
+                                    </button>
+
+
+                                    <!-- 02 · C2 -->
+
+                                    <button type="button"
+                                            class="project-mobile-thumb"
+                                            data-index="1"
+                                            data-image="/images/proyectos/c2.png"
+                                            data-alt="Carnicería - pantalla 2">
+
+                                        <img src="~/images/proyectos/c2.png"
+                                             alt="Carnicería 2">
+
+                                        <span class="thumb-zoom">⌕</span>
+
+                                        <span class="thumb-preview">
+
+                                            <img src="~/images/proyectos/c2.png"
+                                                 alt="">
+
+                                        </span>
+
+                                    </button>
+
+
+                                    <!-- 03 · C3 -->
+
+                                    <button type="button"
+                                            class="project-mobile-thumb"
+                                            data-index="2"
+                                            data-image="/images/proyectos/c3.png"
+                                            data-alt="Carnicería - pantalla 3">
+
+                                        <img src="~/images/proyectos/c3.png"
+                                             alt="Carnicería 3">
+
+                                        <span class="thumb-zoom">⌕</span>
+
+                                        <span class="thumb-preview">
+
+                                            <img src="~/images/proyectos/c3.png"
+                                                 alt="">
+
+                                        </span>
+
+                                    </button>
+
+
+                                    <!-- 04 · C4 -->
+
+                                    <button type="button"
+                                            class="project-mobile-thumb"
+                                            data-index="3"
+                                            data-image="/images/proyectos/c4.png"
+                                            data-alt="Carnicería - pantalla 4">
+
+                                        <img src="~/images/proyectos/c4.png"
+                                             alt="Carnicería 4">
+
+                                        <span class="thumb-zoom">⌕</span>
+
+                                        <span class="thumb-preview">
+
+                                            <img src="~/images/proyectos/c4.png"
+                                                 alt="">
+
+                                        </span>
+
+                                    </button>
+
+
+                                    <!-- 05 · C5 -->
+
+                                    <button type="button"
+                                            class="project-mobile-thumb"
+                                            data-index="4"
+                                            data-image="/images/proyectos/c5.png"
+                                            data-alt="Carnicería - pantalla 5">
+
+                                        <img src="~/images/proyectos/c5.png"
+                                             alt="Carnicería 5">
+
+                                        <span class="thumb-zoom">⌕</span>
+
+                                        <span class="thumb-preview">
+
+                                            <img src="~/images/proyectos/c5.png"
+                                                 alt="">
+
+                                        </span>
+
+                                    </button>
+
+
+                                </div>
+
+
+                                <!-- ==================================
+                         CONTROLES
+                         ================================== -->
+
+                                <div class="facturacion-gallery-controls carniceria-gallery-controls">
+
+                                    <button type="button"
+                                            id="carniceriaThumbPrev"
+                                            class="facturacion-thumb-arrow"
+                                            aria-label="Imágenes anteriores">
+                                        ←
+                                    </button>
+
+                                    <span id="carniceriaThumbIndicator">
+                                        1–5 / 5
+                                    </span>
+
+                                    <button type="button"
+                                            id="carniceriaThumbNext"
+                                            class="facturacion-thumb-arrow"
+                                            aria-label="Imágenes siguientes">
+                                        →
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ==========================================
+             INFORMACIÓN
+             ========================================== -->
+
+                    <div class="col-lg-5">
+
+                        <div class="project-info">
+
+                            <p class="project-number">
+                                07 / 08
+                            </p>
+
+
+                            <h2 class="project-title">
+                                Sitio Web Informativo de Carnicería
+                            </h2>
+
+
+                            <p class="project-description">
+                                Sitio web creado para ayudar a una carnicería a mostrar sus
+                                productos y dar a conocer su negocio en Internet. Facilita
+                                que los clientes encuentren información, conozcan la oferta
+                                disponible y tengan acceso a los medios de contacto.
+                            </p>
+
+
+                            <!-- TECNOLOGÍAS -->
+
+                            <div class="project-tags">
+
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>Bootstrap</span>
+
+                            </div>
+
+
+                            <!-- BOTÓN -->
+
+                            <div class="project-actions">
+
+                                <a href="https://github.com/AnaYancyA/SitioWebInformativoCarnicer-a"
+                                   target="_blank"
+                                   rel="noopener noreferrer"
+                                   class="btn-primary-custom">
+
+                                    GitHub →
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- =================================================
+     08 · PROYECTOS
+     ================================================= -->
+
+            <div class="project-slide">
+
+                <div class="row align-items-center g-5">
+
+                    <!-- GALERÍA -->
+                    <div class="col-lg-7">
+
+                        <div class="project-showcase">
+
+                            <div class="project-mobile-gallery">
+
+                                <!-- IMAGEN PRINCIPAL -->
+                                <div class="project-mobile-main">
+
+    <button type="button"
+            class="main-image-button"
+            data-index="0"
+            onclick="console.log('PORTADA 08')">
+
+        <img src="~/images/proyectos/p1.png"
+             class="project-image"
+             alt="Proyectos">
+
+    </button>
+
+</div>
+
+
+                                <!-- MINIATURAS -->
+                                <div class="project-mobile-thumbs"
+                                     id="proyectosThumbs">
+
+                                    <!-- P1 -->
+                                    <button type="button"
+                                            class="project-mobile-thumb"
+                                            data-index="0"
+                                            data-image="/images/proyectos/p1.png"
+                                            data-alt="Proyectos - pantalla principal">
+
+                                        <img src="~/images/proyectos/p1.png"
+                                             alt="Proyectos 1">
+
+                                        <span class="thumb-zoom">⌕</span>
+
+                                        <span class="thumb-preview">
+                                            <img src="~/images/proyectos/p1.png"
+                                                 alt="">
+                                        </span>
+
+                                    </button>
+
+
+                                    <!-- P2 -->
+                                    <button type="button"
+                                            class="project-mobile-thumb"
+                                            data-index="1"
+                                            data-image="/images/proyectos/p2.png"
+                                            data-alt="Proyectos - pantalla 2">
+
+                                        <img src="~/images/proyectos/p2.png"
+                                             alt="Proyectos 2">
+
+                                        <span class="thumb-zoom">⌕</span>
+
+                                        <span class="thumb-preview">
+                                            <img src="~/images/proyectos/p2.png"
+                                                 alt="">
+                                        </span>
+
+                                    </button>
+
+
+                                    <!-- P3 -->
+                                    <button type="button"
+                                            class="project-mobile-thumb"
+                                            data-index="2"
+                                            data-image="/images/proyectos/p3.png"
+                                            data-alt="Proyectos - pantalla 3">
+
+                                        <img src="~/images/proyectos/p3.png"
+                                             alt="Proyectos 3">
+
+                                        <span class="thumb-zoom">⌕</span>
+
+                                        <span class="thumb-preview">
+                                            <img src="~/images/proyectos/p3.png"
+                                                 alt="">
+                                        </span>
+
+                                    </button>
+
+
+                                    <!-- P4 -->
+                                    <button type="button"
+                                            class="project-mobile-thumb"
+                                            data-index="3"
+                                            data-image="/images/proyectos/p4.png"
+                                            data-alt="Proyectos - pantalla 4">
+
+                                        <img src="~/images/proyectos/p4.png"
+                                             alt="Proyectos 4">
+
+                                        <span class="thumb-zoom">⌕</span>
+
+                                        <span class="thumb-preview">
+                                            <img src="~/images/proyectos/p4.png"
+                                                 alt="">
+                                        </span>
+
+                                    </button>
+
+                                </div>
+
+
+                                <!-- CONTROLES -->
+                                <div class="facturacion-gallery-controls proyectos-gallery-controls">
+
+                                    <button type="button"
+                                            id="proyectosThumbPrev"
+                                            class="facturacion-thumb-arrow"
+                                            aria-label="Imágenes anteriores">
+                                        ←
+                                    </button>
+
+                                    <span id="proyectosThumbIndicator">
+                                        1–4 / 4
+                                    </span>
+
+                                    <button type="button"
+                                            id="proyectosThumbNext"
+                                            class="facturacion-thumb-arrow"
+                                            aria-label="Imágenes siguientes">
+                                        →
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- INFORMACIÓN -->
+                    <div class="col-lg-5">
+
+                        <div class="project-info">
+
+                            <p class="project-number">
+                                08 / 08
+                            </p>
+
+
+                            <h2 class="project-title">
+                                Soluciones Digitales · Portafolio
+                            </h2>
+
+
+                            <p class="project-description">
+                                Selección de soluciones desarrolladas para diferentes necesidades,
+                                aplicando conocimientos de desarrollo web, aplicaciones, bases de datos y
+                                programación para transformar procesos e ideas en herramientas digitales.
+                            </p>
+
+
+                            <!-- TECNOLOGÍAS -->
+                            <div class="project-tags">
+
+                                <span>C#</span>
+                                <span>.NET</span>
+                                <span>Python</span>
+                                <span>SQL</span>
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+
+                            </div>
+
+
+                            <!-- BOTÓN -->
+                            <div class="project-actions">
+
+                                <a href="#"
+                                   target="_blank"
+                                   rel="noopener noreferrer"
+                                   class="btn-primary-custom">
+                                    GitHub →
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+             CONTROLES
+             ================================================= -->
+
+            <div class="projects-controls">
+
+                <button type="button"
+                        class="project-arrow"
+                        id="projectPrev"
+                        aria-label="Proyecto anterior">
+                    ←
+                </button>
+
+
+                <div class="project-dots">
+
+                    <button type="button"
+                            class="project-dot active"
+                            data-slide="0"
+                            aria-label="Proyecto 1"></button>
+
+                    <button type="button"
+                            class="project-dot"
+                            data-slide="1"
+                            aria-label="Proyecto 2"></button>
+
+                    <button type="button"
+                            class="project-dot"
+                            data-slide="2"
+                            aria-label="Proyecto 3"></button>
+
+                    <button type="button"
+                            class="project-dot"
+                            data-slide="3"
+                            aria-label="Proyecto 4"></button>
+
+                    <button type="button"
+                            class="project-dot"
+                            data-slide="4"
+                            aria-label="Proyecto 5"></button>
+
+                    <button type="button"
+                            class="project-dot"
+                            data-slide="5"
+                            aria-label="Proyecto 6"></button>
+
+                    <button type="button"
+                            class="project-dot"
+                            data-slide="6"
+                            aria-label="Proyecto 7"></button>
+
+                    <button type="button"
+                            class="project-dot"
+                            data-slide="7"
+                            aria-label="Proyecto 8"></button>
+
+                </div>
+
+
+                <button type="button"
+                        class="project-arrow"
+                        id="projectNext"
+                        aria-label="Siguiente proyecto">
+                    →
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- =====================================================
+         MODAL DE IMÁGENES
+         ===================================================== -->
+
+        <div class="project-image-modal"
+             id="projectImageModal"
+             aria-hidden="true">
+
+            <button type="button"
+                    class="project-modal-arrow project-modal-prev"
+                    id="projectModalPrev"
+                    aria-label="Imagen anterior">
+                ‹
+            </button>
+
+            <img id="projectModalImage"
+                 src=""
+                 alt="">
+
+            <button type="button"
+                    class="project-modal-arrow project-modal-next"
+                    id="projectModalNext"
+                    aria-label="Imagen siguiente">
+                ›
+            </button>
+
+            <button type="button"
+                    class="project-modal-close"
+                    id="projectModalClose"
+                    aria-label="Cerrar">
+                ×
+            </button>
+
+        </div>
+
+
+        <!-- =====================================================
+         NAVEGACIÓN ENTRE PÁGINAS
+         ===================================================== -->
+
+        <div class="page-navigation">
+
+            <a asp-controller="Home"
+               asp-action="Habilidades"
+               class="btn-outline-custom">
+                ← Anterior
+            </a>
+
+            <a asp-controller="Home"
+               asp-action="Certificaciones"
+               class="btn-primary-custom">
+                Siguiente →
+            </a>
+
+        </div>
+
+    </div>
+
+
+
+           <script>
+
+                document.addEventListener("DOMContentLoaded", function () {
+
+                // =====================================================
+                // PROYECTO 02 - FACTURACIÓN
+                // =====================================================
+
+                const facturacionGallery =
+                document.getElementById("facturacionThumbs");
+
+                if (facturacionGallery) {
+
+                    const facturacionThumbs =
+                Array.from(
+                facturacionGallery.querySelectorAll(
+                ".project-mobile-thumb"
+                )
+                );
+
+                const facturacionPrev =
+                document.getElementById(
+                "facturacionThumbPrev"
+                );
+
+                const facturacionNext =
+                document.getElementById(
+                "facturacionThumbNext"
+                );
+
+                const facturacionIndicator =
+                document.getElementById(
+                "facturacionThumbIndicator"
+                );
+
+                const facturacionMainImage =
+                document.getElementById(
+                "facturacionMainImage"
+                );
+
+                let facturacionPage = 0;
+
+                const facturacionItemsPerPage = 5;
+
+
+                function showFacturacionPage(page) {
+
+                    facturacionPage = page;
+
+                const start =
+                page * facturacionItemsPerPage;
+
+                const end =
+                start + facturacionItemsPerPage;
+
+
+                facturacionThumbs.forEach(
+                function (thumb, index) {
+
+                    thumb.style.display =
+                    index >= start &&
+                        index < end
+                        ? "block"
+                        : "none";
+
+                            }
+                );
+
+
+                facturacionIndicator.textContent =
+                `${start + 1}–${Math.min(
+                    end,
+                    facturacionThumbs.length
+                )} / ${facturacionThumbs.length}`;
+
+
+                facturacionPrev.disabled =
+                facturacionPage === 0;
+
+
+                facturacionNext.disabled =
+                            facturacionPage >=
+                Math.ceil(
+                facturacionThumbs.length /
+                facturacionItemsPerPage
+                ) - 1;
+
+                    }
+
+
+                facturacionNext.addEventListener(
+                "click",
+                function () {
+
+                            const totalPages =
+                Math.ceil(
+                facturacionThumbs.length /
+                facturacionItemsPerPage
+                );
+
+
+                if (
+                facturacionPage <
+                    totalPages - 1
+                ) {
+
+                    showFacturacionPage(
+                        facturacionPage + 1
+                    );
+
+                            }
+
+                        }
+                );
+
+
+                facturacionPrev.addEventListener(
+                "click",
+                function () {
+
+                            if (facturacionPage > 0) {
+
+                    showFacturacionPage(
+                        facturacionPage - 1
+                    );
+
+                            }
+
+                        }
+                );
+
+
+                facturacionThumbs.forEach(
+                function (thumb) {
+
+                    thumb.addEventListener(
+                        "click",
+                        function() {
+
+                            facturacionMainImage.src =
+                                thumb.dataset.image;
+
+                            facturacionMainImage.alt =
+                                thumb.dataset.alt || "";
+
+                        }
+                    );
+
+                        }
+                );
+
+
+                showFacturacionPage(0);
+
+                }
+
+
+
+                // =====================================================
+                // PROYECTO 03 - SOPORTE DE TIQUETES
+                // =====================================================
+
+                const soporteGallery =
+                document.getElementById(
+                "soporteThumbs"
+                );
+
+
+                if (soporteGallery) {
+
+                    const soporteThumbs =
+                Array.from(
+                soporteGallery.querySelectorAll(
+                ".project-mobile-thumb"
+                )
+                );
+
+
+                const soportePrev =
+                document.getElementById(
+                "soporteThumbPrev"
+                );
+
+
+                const soporteNext =
+                document.getElementById(
+                "soporteThumbNext"
+                );
+
+
+                const soporteIndicator =
+                document.getElementById(
+                "soporteThumbIndicator"
+                );
+
+
+                const soporteMainImage =
+                document.getElementById(
+                "soporteMainImage"
+                );
+
+
+                let soportePage = 0;
+
+                const soporteItemsPerPage = 5;
+
+
+                function showSoportePage(page) {
+
+                    soportePage = page;
+
+                const start =
+                page * soporteItemsPerPage;
+
+                const end =
+                start + soporteItemsPerPage;
+
+
+                soporteThumbs.forEach(
+                function (thumb, index) {
+
+                    thumb.style.display =
+                    index >= start &&
+                        index < end
+                        ? "block"
+                        : "none";
+
+                            }
+                );
+
+
+                soporteIndicator.textContent =
+                `${start + 1}–${Math.min(
+                    end,
+                    soporteThumbs.length
+                )} / ${soporteThumbs.length}`;
+
+
+                soportePrev.disabled =
+                soportePage === 0;
+
+
+                soporteNext.disabled =
+                            soportePage >=
+                Math.ceil(
+                soporteThumbs.length /
+                soporteItemsPerPage
+                ) - 1;
+
+                    }
+
+
+                soporteNext.addEventListener(
+                "click",
+                function () {
+
+                            const totalPages =
+                Math.ceil(
+                soporteThumbs.length /
+                soporteItemsPerPage
+                );
+
+
+                if (
+                soportePage <
+                    totalPages - 1
+                ) {
+
+                    showSoportePage(
+                        soportePage + 1
+                    );
+
+                            }
+
+                        }
+                );
+
+
+                soportePrev.addEventListener(
+                "click",
+                function () {
+
+                            if (soportePage > 0) {
+
+                    showSoportePage(
+                        soportePage - 1
+                    );
+
+                            }
+
+                        }
+                );
+
+
+                soporteThumbs.forEach(
+                function (thumb) {
+
+                    thumb.addEventListener(
+                        "click",
+                        function() {
+
+                            soporteMainImage.src =
+                                thumb.dataset.image;
+
+                            soporteMainImage.alt =
+                                thumb.dataset.alt || "";
+
+                        }
+                    );
+
+                        }
+                );
+
+
+                showSoportePage(0);
+
+                }
+
+            });
+
+    </script>
+</section>

@@ -1,0 +1,259 @@
+﻿@{
+    ViewData["Title"] = "Inicio";
+}
+
+@section Styles {
+    <link rel="stylesheet"
+          href="~/css/sobre-mi.css"
+          asp-append-version="true" />
+}
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="hero-section">
+
+    <div class="container">
+
+        <div class="row align-items-center hero-row">
+
+            <!-- TEXTO -->
+            <div class="col-lg-7">
+
+                <div class="hero-content fade-in">
+
+                    <p class="hero-subtitle">
+                        HOLA, SOY
+                    </p>
+
+                    <h1 class="hero-title">
+                        ANA YANCY
+                        <span>AGUILAR PRADO</span>
+                    </h1>
+
+                    <h2 class="hero-role">
+                        Ingeniera en Sistemas
+                        <span>|</span>
+                        Full Stack Developer
+                    </h2>
+
+                    <p class="hero-description">
+                        Desarrollo soluciones digitales utilizando
+                        C#, .NET, Python, SQL, WordPress y Microsoft Azure.
+                        Puedo transformar ideas en aplicaciones
+                        funcionales, modernas y escalables.
+                    </p>
+
+
+                    <!-- TECNOLOGÍAS -->
+                    <div class="hero-technologies">
+
+                        <span>C#</span>
+                        <span>.NET</span>
+                        <span>Python</span>
+                        <span>SQL</span>
+                        <span>WordPress</span>
+                        <span>Azure</span>
+
+                    </div>
+
+
+                    <!-- BOTONES -->
+                    <div class="hero-buttons">
+
+                        <!-- VER PROYECTOS -->
+                        <a asp-controller="Home"
+                           asp-action="Proyectos"
+                           class="btn-primary-custom">
+                            Ver proyectos
+                        </a>
+
+
+                        <!-- CONTACTO -->
+                        <a asp-controller="Home"
+                           asp-action="Contacto"
+                           class="btn-outline-custom">
+                            Contáctame
+                        </a>
+
+
+                       <!-- DESCARGAR CV --> 
+                        <a href="~/documents/Desarrolladora%20full%20sctack-%20Ana_Yancy_Aguilar_Prado%20-CV.pdf"
+                          class="btn-outline-custom" 
+                          download> 
+                          Descargar CV </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ELEMENTO VISUAL -->
+            <div class="col-lg-5">
+
+                <div class="hero-visual">
+
+                    <div class="hero-circle circle-one"></div>
+
+                    <div class="hero-circle circle-two"></div>
+
+                    <div class="code-card">
+
+                        <div class="code-header">
+
+                            <span></span>
+                            <span></span>
+                            <span></span>
+
+                        </div>
+
+
+                        <div class="code-content">
+
+                            <p>
+                                <span class="code-purple">class</span>
+                                Developer
+                            </p>
+
+                            <p>
+                                {
+                            </p>
+
+                            <p class="code-indent">
+                                <span class="code-purple">string</span>
+                                Name =
+                                <span class="code-white">
+                                    "Ana Yancy";
+                                </span>
+                            </p>
+
+                            <p class="code-indent">
+                                <span class="code-purple">string</span>
+                                Role =
+                                <span class="code-white">
+                                    "Full Stack";
+                                </span>
+                            </p>
+
+                            <p class="code-indent">
+                                <span class="code-purple">string</span>
+                                Stack =
+                                <span class="code-white">
+                                    "C# .NET Azure";
+                                </span>
+                            </p>
+
+                            <p>
+                                }
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =====================================================
+     ESTADÍSTICAS
+===================================================== -->
+
+<section class="stats-section">
+
+    <div class="container">
+
+        <div class="row">
+
+            <!-- CERTIFICACIONES -->
+            <div class="col-md-4">
+
+                <div class="stat-item">
+
+                    <div class="stat-icon">
+                        <i class="bi bi-patch-check"></i>
+                    </div>
+
+                    <div>
+
+                        <h3>8</h3>
+
+                        <p>
+                            Certificaciones<br>
+                            obtenidas
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- CERTIFICADOS -->
+            <div class="col-md-4">
+
+                <div class="stat-item">
+
+                    <div class="stat-icon">
+                        <i class="bi bi-award"></i>
+                    </div>
+
+                    <div>
+
+                        <h3>4</h3>
+
+                        <p>
+                            Certificados de<br>
+                            formación
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ACTUALIZACIÓN -->
+            <div class="col-md-4">
+
+                <div class="stat-item">
+
+                    <div class="stat-icon">
+                        <i class="bi bi-stars"></i>
+                    </div>
+
+                    <div>
+
+                        <h3>Actualización</h3>
+
+                        <p>
+                            Constante en las últimas<br>
+                            tecnologías
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+@await Html.PartialAsync("_SobreMi")

@@ -1,0 +1,193 @@
+﻿@{
+    ViewData["Title"] = "Sobre mí";
+}
+
+@section Styles {
+    <link rel="stylesheet"
+          href="~/css/sobre-mi.css"
+          asp-append-version="true" />
+}
+
+<section class="section about-section">
+
+    <div class="container">
+
+        <!-- ENCABEZADO -->
+        <div class="about-heading">
+
+            <p class="about-subtitle">
+                SOBRE MÍ
+            </p>
+
+            <h1 class="about-title">
+                Enfoque profesional
+            </h1>
+
+            <p class="about-intro">
+                Analizo necesidades, identifico oportunidades de mejora y desarrollo
+                soluciones tecnológicas orientadas a resolver problemas concretos.
+            </p>
+
+        </div>
+
+
+        <!-- CONTENIDO -->
+        <div class="row align-items-stretch g-4">
+
+            <!-- PERFIL PROFESIONAL -->
+            <div class="col-lg-7">
+
+                <div class="about-main-card">
+
+                    <div class="about-card-line"></div>
+
+                    <p class="about-card-label">
+                        PERFIL PROFESIONAL
+                    </p>
+
+                    <h2>
+                        Hola, soy Ana Yancy.
+                    </h2>
+
+                    <p>
+                        Mi enfoque está orientado al análisis de necesidades,
+                        desarrollo de soluciones y mejora de procesos mediante
+                        tecnología.
+                    </p>
+
+                    <p>
+                        Trabajo en el desarrollo de
+                        <strong>aplicaciones web</strong>,
+                        <strong>APIs</strong> y
+                        <strong>sistemas de gestión</strong>, utilizando tecnologías
+                        como <strong>C#</strong>, <strong>.NET</strong>,
+                        <strong>Python</strong>, <strong>SQL</strong>,
+                        <strong>Microsoft Azure</strong> y <strong>WordPress</strong>.
+                    </p>
+
+                    <p>
+                        Busco crear soluciones
+                        <strong>funcionales, mantenibles y escalables</strong>
+                        que permitan automatizar tareas, centralizar información
+                        y facilitar la gestión de los procesos.
+                    </p>
+
+                    <p class="about-last-text">
+                        Combino desarrollo de software, bases de datos, APIs,
+                        servicios cloud y herramientas web con una orientación
+                        práctica hacia la solución de problemas y la generación
+                        de valor.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- ESPECIALIDADES -->
+            <div class="col-lg-5">
+
+                <div class="about-skills-card">
+
+                    <p class="about-card-label">
+                        ESPECIALIDADES
+                    </p>
+
+
+                    <div class="about-skill-item">
+
+                        <div class="about-skill-number">
+                            01
+                        </div>
+
+                        <div>
+                            <h4>Desarrollo Full Stack</h4>
+
+                            <p>
+                                Desarrollo de aplicaciones web,
+                                frontend, backend y APIs.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="about-skill-item">
+
+                        <div class="about-skill-number">
+                            02
+                        </div>
+
+                        <div>
+                            <h4>Microsoft Azure</h4>
+
+                            <p>
+                                Integración de soluciones y servicios
+                                en la nube.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="about-skill-item">
+
+                        <div class="about-skill-number">
+                            03
+                        </div>
+
+                        <div>
+                            <h4>Bases de Datos</h4>
+
+                            <p>
+                                Diseño, consultas y gestión
+                                de bases de datos.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="about-skill-item last">
+
+                        <div class="about-skill-number">
+                            04
+                        </div>
+
+                        <div>
+                            <h4>Soluciones de Software</h4>
+
+                            <p>
+                                Desarrollo de herramientas orientadas
+                                a resolver necesidades y optimizar procesos.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- NAVEGACIÓN -->
+
+        <div class="page-navigation">
+
+            <a asp-controller="Home"
+               asp-action="Index"
+               class="btn-outline-custom">
+                ← Volver al inicio
+            </a>
+
+            <a asp-controller="Home"
+               asp-action="Habilidades"
+               class="btn-primary-custom">
+                Siguiente →
+            </a>
+
+        </div>
+
+</section>

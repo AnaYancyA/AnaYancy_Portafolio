@@ -1,0 +1,35 @@
+﻿@{
+    ViewData["Title"] = "Contacto";
+}
+
+@section Styles {
+    <link rel="stylesheet"
+          href="~/css/contacto.css"
+          asp-append-version="true" />
+}
+
+
+@if (TempData["MensajeEnviado"] != null)
+{
+    <div class="mensaje-exito">
+        <i class="bi bi-check-circle-fill"></i>
+
+        <span>
+            ¡Tu mensaje fue enviado con éxito!
+        </span>
+    </div>
+}
+
+@if (TempData["MensajeError"] != null)
+{
+    <div class="mensaje-error">
+        <i class="bi bi-x-circle-fill"></i>
+
+        <span>
+            Hubo un problema al enviar el mensaje.
+        </span>
+    </div>
+}
+
+
+@await Html.PartialAsync("_Contacto")

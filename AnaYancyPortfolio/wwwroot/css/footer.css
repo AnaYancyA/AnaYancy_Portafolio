@@ -1,0 +1,95 @@
+﻿/* =========================================================
+   FOOTER
+========================================================= */
+.portfolio-footer {
+    padding: 15px 0;
+    background: #111111;
+    border-top: 1px solid rgba(124, 58, 237, 0.18);
+    color: #a8a8a8;
+}
+
+.portfolio-footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.portfolio-footer strong {
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   ENLACES Y REDES
+========================================================= */
+
+.footer-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px 28px;
+}
+
+.footer-link,
+.footer-link:visited {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff !important;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+
+    /* =========================================================
+   ICONOS
+========================================================= */
+
+    .footer-link i {
+        color: #ffffff !important;
+        font-size: 1.5rem;
+        margin-bottom: 5px;
+        transition: var(--transition);
+    }
+
+
+    /* =========================================================
+   EFECTO AL PASAR EL MOUSE
+========================================================= */
+
+    .footer-link:hover {
+        color: var(--color-purple-light) !important;
+        transform: translateY(-2px);
+    }
+
+        .footer-link:hover i {
+            color: var(--color-purple-light) !important;
+        }
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 991px) {
+
+    .footer-links {
+        justify-content: flex-start;
+    }
+}
+
+
+@media (max-width: 576px) {
+
+    .portfolio-footer {
+        text-align: center;
+    }
+
+    .footer-links {
+        justify-content: center;
+        gap: 12px 20px;
+        margin-top: 15px;
+    }
+}

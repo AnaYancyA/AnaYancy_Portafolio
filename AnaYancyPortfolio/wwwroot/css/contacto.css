@@ -1,0 +1,959 @@
+﻿/* =====================================================
+   CONTACTO - PÁGINA COMPLETA
+===================================================== */
+
+.contact-section {
+    position: relative;
+    width: 100%;
+    min-height: auto;
+    padding: 95px 0 25px;
+    background: #ffffff;
+    overflow: hidden;
+}
+
+
+/* =====================================================
+   DECORACIONES
+===================================================== */
+
+.contact-bg-shape {
+    position: absolute;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.contact-bg-left {
+    width: 380px;
+    height: 380px;
+    left: -210px;
+    top: 170px;
+    border-radius: 50%;
+    background: rgba(124, 58, 237, 0.07);
+}
+
+.contact-bg-right {
+    width: 360px;
+    height: 360px;
+    right: -180px;
+    top: 300px;
+    border: 2px solid rgba(124, 58, 237, 0.16);
+    border-radius: 50%;
+}
+
+
+/* =====================================================
+   CONTENEDOR
+===================================================== */
+
+.contact-section > .container {
+    position: relative;
+    z-index: 2;
+    max-width: 1180px;
+}
+
+
+/* =====================================================
+   ENCABEZADO
+===================================================== */
+
+.contact-section .contact-header {
+    position: relative;
+    display: block;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto 70px;
+    padding: 0;
+    text-align: center;
+}
+
+
+/* =====================================================
+   DECORACIÓN SUPERIOR
+===================================================== */
+
+.contact-section .contact-decoration {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin: 0 0 20px;
+}
+
+    .contact-section .contact-decoration span {
+        display: block;
+        width: 65px;
+        height: 1px;
+        background: #b9a0ff;
+    }
+
+    .contact-section .contact-decoration i {
+        display: inline-block;
+        color: #7c3aed;
+        font-size: 22px;
+    }
+
+
+/* =====================================================
+   ETIQUETA
+===================================================== */
+
+.contact-section .contact-label {
+    display: inline-block;
+    padding: 8px 20px;
+    border: 1px solid #8b5cf6;
+    border-radius: 30px;
+    background: #ffffff;
+    color: #7c3aed;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+
+/* =====================================================
+   TÍTULO PRINCIPAL
+===================================================== */
+
+.contact-section .contact-header h1 {
+    display: block;
+    width: 100%;
+    margin: 22px 0 0;
+    padding: 0;
+    color: #111111;
+    font-family: inherit;
+    font-size: 52px;
+    font-weight: 800;
+    line-height: 1.12;
+    letter-spacing: -1.5px;
+    text-align: center;
+}
+
+    .contact-section .contact-header h1 span {
+        color: #7c3aed;
+    }
+
+
+/* =====================================================
+   LÍNEA DECORATIVA
+===================================================== */
+
+.contact-section .contact-title-line {
+    display: block;
+    width: 75px;
+    height: 4px;
+    margin: 20px auto 24px;
+    border-radius: 10px;
+    background: #7c3aed;
+}
+
+
+/* =====================================================
+   TEXTO DEL ENCABEZADO
+===================================================== */
+
+.contact-section .contact-header p {
+    display: block;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    color: #666666;
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 1.8;
+    text-align: center;
+}
+
+
+/* =====================================================
+   FILA
+===================================================== */
+
+.contact-section .contact-row {
+    display: flex;
+    align-items: stretch;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+
+    /* =====================================================
+   COLUMNAS
+===================================================== */
+
+    .contact-section .contact-row > div {
+        box-sizing: border-box;
+    }
+
+
+/* =====================================================
+   TARJETA NEGRA
+===================================================== */
+
+.contact-section .contact-info {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 600px;
+    padding: 48px;
+    box-sizing: border-box;
+    border-radius: 24px;
+    background: #111111;
+    color: #ffffff;
+    overflow: hidden;
+}
+
+
+/* CÍRCULO MORADO */
+
+.contact-section .contact-info-circle {
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    top: -105px;
+    right: -75px;
+    border-radius: 50%;
+    background: linear-gradient( 135deg, #8b5cf6, #4c1d95 );
+    opacity: 0.65;
+}
+
+
+/* TÍTULO */
+
+.contact-section .contact-info h2 {
+    position: relative;
+    margin: 0 0 22px;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+
+/* DESCRIPCIÓN */
+
+.contact-section .contact-description {
+    position: relative;
+    max-width: 400px;
+    margin: 0 0 45px;
+    color: #d0d0d0;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+
+/* =====================================================
+   INFORMACIÓN
+===================================================== */
+
+.contact-section .contact-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+
+/* ICONOS */
+
+.contact-section .contact-icon {
+    width: 54px;
+    height: 54px;
+    min-width: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    background: rgba(124, 58, 237, 0.18);
+    color: #a78bfa;
+    font-size: 20px;
+}
+
+
+/* TEXTO */
+
+.contact-section .contact-item-text {
+    min-width: 0;
+}
+
+    .contact-section .contact-item-text span {
+        display: block;
+        margin-bottom: 6px;
+        color: #a78bfa;
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+    }
+
+    .contact-section .contact-item-text a,
+    .contact-section .contact-item-text p {
+        display: block;
+        margin: 0;
+        color: #ffffff;
+        font-size: 14px;
+        line-height: 1.5;
+        text-decoration: none;
+    }
+
+
+/* =====================================================
+   REDES
+===================================================== */
+
+.contact-section .contact-social {
+    position: relative;
+    display: flex;
+    gap: 14px;
+    margin-top: 45px;
+    padding-top: 28px;
+    border-top: 1px solid #333333;
+}
+
+    .contact-section .contact-social a {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        border: 1px solid #3b3b3b;
+        border-radius: 13px;
+        background: transparent;
+        color: #ffffff;
+        font-size: 19px;
+        text-decoration: none;
+        transition: 0.3s ease;
+    }
+
+        .contact-section .contact-social a:hover {
+            background: #7c3aed;
+            border-color: #7c3aed;
+            transform: translateY(-4px);
+        }
+
+
+/* =====================================================
+   TARJETA DEL FORMULARIO
+===================================================== */
+
+.contact-section .contact-form-card {
+    width: 100%;
+    height: 100%;
+    min-height: 600px;
+    padding: 48px;
+    box-sizing: border-box;
+    border: 1px solid #eeeeee;
+    border-radius: 24px;
+    background: #ffffff;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.07);
+}
+
+
+/* =====================================================
+   ENCABEZADO FORMULARIO
+===================================================== */
+
+.contact-section .form-header {
+    margin: 0 0 30px;
+}
+
+    .contact-section .form-header span {
+        display: block;
+        margin-bottom: 9px;
+        color: #7c3aed;
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
+
+    .contact-section .form-header h2 {
+        margin: 0;
+        color: #111111;
+        font-family: inherit;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 1.2;
+    }
+
+
+/* =====================================================
+   FORMULARIO
+===================================================== */
+
+.contact-section .contact-form-card form {
+    width: 100%;
+    margin: 0;
+}
+
+
+/* =====================================================
+   GRUPOS
+===================================================== */
+
+.contact-section .contact-form-card .form-group {
+    display: block;
+    width: 100%;
+    margin: 0 0 22px;
+}
+
+
+    /* =====================================================
+   LABEL
+===================================================== */
+
+    .contact-section .contact-form-card .form-group label {
+        display: block;
+        width: 100%;
+        margin: 0 0 8px;
+        color: #222222;
+        font-size: 13px;
+        font-weight: 600;
+    }
+
+
+/* =====================================================
+   INPUT WRAPPER
+===================================================== */
+
+.contact-section .input-wrapper {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin: 0;
+}
+
+
+    /* =====================================================
+   ICONOS DE INPUT
+===================================================== */
+
+    .contact-section .input-wrapper > i {
+        position: absolute;
+        left: 17px;
+        top: 50%;
+        z-index: 5;
+        transform: translateY(-50%);
+        color: #999999;
+        font-size: 17px;
+        pointer-events: none;
+    }
+
+
+/* =====================================================
+   INPUT
+===================================================== */
+
+.contact-section .contact-form-card input[type="text"],
+.contact-section .contact-form-card input[type="email"] {
+    display: block;
+    width: 100% !important;
+    max-width: none !important;
+    height: 52px;
+    margin: 0;
+    padding: 0 16px 0 48px;
+    box-sizing: border-box;
+    border: 1px solid #dddddd;
+    border-radius: 11px;
+    background: #ffffff;
+    color: #222222;
+    font-family: inherit;
+    font-size: 14px;
+    outline: none;
+    appearance: none;
+}
+
+
+/* =====================================================
+   TEXTAREA
+===================================================== */
+
+.contact-section .contact-form-card textarea {
+    display: block;
+    width: 100% !important;
+    max-width: none !important;
+    height: 150px;
+    min-height: 150px;
+    margin: 0;
+    padding: 15px 16px 15px 48px;
+    box-sizing: border-box;
+    border: 1px solid #dddddd;
+    border-radius: 11px;
+    background: #ffffff;
+    color: #222222;
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 1.6;
+    outline: none;
+    resize: vertical;
+    appearance: none;
+}
+
+
+/* =====================================================
+   ICONO DEL TEXTAREA
+===================================================== */
+
+.contact-section .textarea-wrapper > i {
+    top: 19px;
+    transform: none;
+}
+
+
+/* =====================================================
+   FOCUS
+===================================================== */
+
+.contact-section .contact-form-card input:focus,
+.contact-section .contact-form-card textarea:focus {
+    border-color: #8b5cf6;
+    box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.10);
+}
+
+
+/* =====================================================
+   PLACEHOLDER
+===================================================== */
+
+.contact-section .contact-form-card input::placeholder,
+.contact-section .contact-form-card textarea::placeholder {
+    color: #a0a0a0;
+    opacity: 1;
+}
+
+
+/* =====================================================
+   BOTÓN
+===================================================== */
+
+.contact-section .btn-contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100% !important;
+    height: 52px;
+    margin: 5px 0 0;
+    padding: 0 25px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 11px;
+    background: #7c3aed;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+    .contact-section .btn-contact:hover {
+        background: #6d28d9;
+        transform: translateY(-2px);
+        box-shadow: 0 10px 25px rgba(124, 58, 237, 0.25);
+    }
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 991px) {
+
+    .contact-section {
+        padding: 75px 0 90px;
+    }
+
+        .contact-section .contact-header h1 {
+            font-size: 44px;
+        }
+
+        .contact-section .contact-header {
+            margin-bottom: 50px;
+        }
+
+        .contact-section .contact-info {
+            min-height: auto;
+            margin-bottom: 25px;
+        }
+
+        .contact-section .contact-form-card {
+            min-height: auto;
+        }
+}
+
+
+/* =====================================================
+   CELULAR
+===================================================== */
+
+@media (max-width: 576px) {
+
+    .contact-section {
+        padding: 60px 0 75px;
+    }
+
+        .contact-section .contact-header h1 {
+            font-size: 34px;
+        }
+
+        .contact-section .contact-header p {
+            font-size: 14px;
+        }
+
+        .contact-section .contact-decoration span {
+            width: 35px;
+        }
+
+        .contact-section .contact-info {
+            padding: 30px 24px;
+        }
+
+        .contact-section .contact-form-card {
+            padding: 30px 24px;
+        }
+
+        .contact-section .form-header h2 {
+            font-size: 25px;
+        }
+}
+
+
+/* =========================================
+   CONTACT HIGHLIGHTS
+========================================= */
+
+.contact-highlights {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    margin-top: 30px;
+    margin-bottom: 65px; /* MÁS ESPACIO ANTES DEL FORMULARIO */
+    flex-wrap: wrap;
+}
+
+.contact-highlight {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #555;
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+    .contact-highlight i {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        background: rgba(111, 66, 193, 0.08);
+        color: #6f42c1;
+        font-size: 1.1rem;
+        transition: all 0.3s ease;
+    }
+
+    .contact-highlight:hover {
+        color: #6f42c1;
+        transform: translateY(-3px);
+    }
+
+        .contact-highlight:hover i {
+            background: #6f42c1;
+            color: white;
+            box-shadow: 0 8px 20px rgba(111, 66, 193, 0.25);
+        }
+
+
+/* RESPONSIVE */
+
+@media (max-width: 576px) {
+
+    .contact-highlights {
+        gap: 18px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+
+/* =====================================================
+   DECORACIONES LATERALES
+===================================================== */
+
+.contact-section {
+    position: relative;
+    overflow: hidden;
+}
+
+
+    /* CONTENIDO ENCIMA DE LAS DECORACIONES */
+
+    .contact-section .container {
+        position: relative;
+        z-index: 2;
+    }
+
+
+/* =====================================================
+   CÍRCULOS SUAVES DE FONDO
+   SOLO EN LA PARTE SUPERIOR
+===================================================== */
+
+.contact-bg-shape {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: rgba(111, 66, 193, 0.06);
+    z-index: 0;
+    pointer-events: none;
+}
+
+.contact-bg-left {
+    left: -110px;
+    top: 40px;
+}
+
+.contact-bg-right {
+    right: -110px;
+    top: 40px;
+}
+
+
+/* =====================================================
+   ARCOS LATERALES SUPERIORES
+===================================================== */
+
+.contact-side-decoration {
+    position: absolute;
+    width: 220px;
+    height: 330px;
+    top: 25px;
+    z-index: 1;
+    pointer-events: none;
+}
+
+
+/* IZQUIERDA */
+
+.contact-decoration-left {
+    left: -100px;
+    border-right: 1px solid rgba(111, 66, 193, 0.25);
+    border-radius: 0 50% 50% 0;
+}
+
+
+/* DERECHA */
+
+.contact-decoration-right {
+    right: -100px;
+    border-left: 1px solid rgba(111, 66, 193, 0.25);
+    border-radius: 50% 0 0 50%;
+}
+
+
+/* =====================================================
+   CÍRCULOS MORADOS
+   SOLO ARRIBA
+===================================================== */
+
+.circle {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #8b5cf6, #5b2dbd);
+    box-shadow: 0 5px 15px rgba(111, 66, 193, 0.25);
+}
+
+
+/* IZQUIERDA */
+
+.contact-decoration-left .circle-top {
+    top: 35px;
+    right: 8px;
+}
+
+
+/* DERECHA */
+
+.contact-decoration-right .circle-top {
+    top: 35px;
+    left: 8px;
+}
+
+
+/* OCULTAMOS LOS CÍRCULOS DE ABAJO */
+
+.circle-bottom {
+    display: none;
+}
+
+
+/* =====================================================
+   PUNTITOS
+===================================================== */
+
+.dots {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(4, 5px);
+    gap: 10px;
+}
+
+
+    /* CADA PUNTO */
+
+    .dots span {
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background: #7c4dff;
+        opacity: 0.7;
+    }
+
+
+/* =====================================================
+   PUNTOS IZQUIERDA
+===================================================== */
+
+.dots-left {
+    right: 10px;
+    top: 170px;
+}
+
+
+/* =====================================================
+   PUNTOS DERECHA
+===================================================== */
+
+.dots-right {
+    left: 10px;
+    top: 170px;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 992px) {
+
+    .contact-side-decoration {
+        opacity: 0.6;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .contact-side-decoration,
+    .contact-bg-shape {
+        display: none;
+    }
+}
+
+
+/* ==========================================
+   NAVEGACIÓN - BOTONES CONTACTO
+========================================== */
+
+.contact-section .page-navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 52px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+    .contact-section .page-navigation .btn-outline-custom,
+    .contact-section .page-navigation .btn-primary-custom {
+        width: 150px !important;
+        min-width: 150px !important;
+        max-width: 150px !important;
+        height: 48px !important;
+        min-height: 48px !important;
+        max-height: 48px !important;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 !important;
+        box-sizing: border-box;
+        font-size: 1rem !important;
+        font-weight: 700;
+    }
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 576px) {
+
+    .page-navigation {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+        .page-navigation .btn-outline-custom,
+        .page-navigation .btn-primary-custom {
+            width: 100%;
+            max-width: 280px;
+            height: 55px;
+        }
+}
+
+/* ==========================================
+   MENSAJE DE ÉXITO
+========================================== */
+
+.mensaje-exito {
+    max-width: 700px;
+    margin: 25px auto 20px;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 10px;
+    background: #ecfdf5;
+    border: 1px solid #86efac;
+    color: #166534;
+    font-weight: 600;
+}
+
+    .mensaje-exito i {
+        font-size: 20px;
+    }
+
+
+/* ==========================================
+   MENSAJE DE ERROR
+========================================== */
+
+.mensaje-error {
+    max-width: 700px;
+    margin: 25px auto 20px;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 10px;
+    background: #fef2f2;
+    border: 1px solid #fca5a5;
+    color: #991b1b;
+    font-weight: 600;
+}
+
+    .mensaje-error i {
+        font-size: 20px;
+    }
