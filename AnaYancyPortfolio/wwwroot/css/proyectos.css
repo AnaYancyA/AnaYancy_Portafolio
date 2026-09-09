@@ -1115,3 +1115,54 @@
         max-height: 75vh;
     }
 }
+/* ========================================================= 
+   NAVEGACIÓN - PROYECTOS 
+========================================================= */
+
+.projects-section .page-navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 52px;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+    .projects-section .page-navigation .btn-outline-custom,
+    .projects-section .page-navigation .btn-primary-custom {
+        width: 220px;
+        min-width: 220px;
+        height: 62px;
+        min-height: 62px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        box-sizing: border-box;
+        font-size: 1.1rem;
+        font-weight: 700;
+    }
+
+
+/* ========================================================= 
+   CELULAR 
+========================================================= */
+
+@media (max-width: 576px) {
+
+    .projects-section .page-navigation {
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 50px;
+        margin-bottom: 60px;
+    }
+
+        .projects-section .page-navigation .btn-outline-custom,
+        .projects-section .page-navigation .btn-primary-custom {
+            width: 100%;
+            max-width: 320px;
+            height: 58px;
+            min-height: 58px;
+        }
+}

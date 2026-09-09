@@ -324,3 +324,50 @@
         font-size: 0.98rem;
     }
 }
+
+/* =========================================================
+   NAVEGACIÓN - SOBRE MÍ
+========================================================= */
+
+.about-section .page-navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 52px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+    .about-section .page-navigation .btn-outline-custom,
+    .about-section .page-navigation .btn-primary-custom {
+        width: 220px;
+        min-width: 220px;
+        height: 62px;
+        min-height: 62px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        box-sizing: border-box;
+        font-size: 1.1rem;
+        font-weight: 700;
+    }
+
+
+/* CELULAR */
+
+@media (max-width: 576px) {
+
+    .about-section .page-navigation {
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 35px;
+    }
+
+        .about-section .page-navigation .btn-outline-custom,
+        .about-section .page-navigation .btn-primary-custom {
+            width: 100%;
+            max-width: 320px;
+            height: 58px;
+        }
+}

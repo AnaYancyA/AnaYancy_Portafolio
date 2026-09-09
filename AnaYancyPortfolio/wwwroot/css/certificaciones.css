@@ -786,15 +786,56 @@
     transform: rotate(90deg);
 }
 
+
 /* ==========================================
    NAVEGACIÓN ENTRE PÁGINAS
    ========================================== */
 
 .page-navigation {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 52px;
-    margin-top: 55px;
-    margin-bottom: 80px;
+    margin-top: 90px;
+    margin-bottom: 100px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+    /* ==========================================
+   BOTONES DE NAVEGACIÓN
+   ========================================== */
+
+    .page-navigation .btn-outline-custom,
+    .page-navigation .btn-primary-custom {
+        width: 220px;
+        min-width: 220px;
+        height: 62px;
+        min-height: 62px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        box-sizing: border-box;
+        font-size: 1.1rem;
+        font-weight: 700;
+    }
+
+@media (max-width: 576px) {
+
+    .page-navigation {
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 50px;
+        margin-bottom: 60px;
+    }
+
+        .page-navigation .btn-outline-custom,
+        .page-navigation .btn-primary-custom {
+            width: 100%;
+            max-width: 320px;
+            height: 58px;
+            min-height: 58px;
+        }
 }
