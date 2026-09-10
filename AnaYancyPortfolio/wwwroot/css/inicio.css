@@ -1,0 +1,1315 @@
+﻿/* =========================================================
+   INICIO — HERO PRINCIPAL
+   ========================================================= */
+
+.hero-section {
+    position: relative;
+    overflow: hidden;
+    min-height: 690px;
+    display: flex;
+    align-items: center;
+    padding: 70px 0 45px;
+    background: radial-gradient(circle at 78% 20%, rgba(124, 58, 237, 0.12), transparent 28%), radial-gradient(circle at 20% 85%, rgba(124, 58, 237, 0.07), transparent 25%), #ffffff;
+}
+
+    .hero-section .container {
+        position: relative;
+        z-index: 2;
+    }
+
+.hero-row {
+    min-height: 570px;
+}
+
+
+/* =========================================================
+   TEXTO
+   ========================================================= */
+
+.hero-content {
+    position: relative;
+    z-index: 3;
+}
+
+.hero-subtitle {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin: 0 0 22px;
+    color: #7137e8;
+    font-size: 1.15rem;
+    font-weight: 800;
+    letter-spacing: 0.28em;
+}
+
+    .hero-subtitle::after {
+        content: "";
+        width: 115px;
+        height: 3px;
+        border-radius: 10px;
+        background: linear-gradient(90deg, #7137e8, rgba(113, 55, 232, 0.15));
+    }
+
+
+/* =========================================================
+   NOMBRE
+   ========================================================= */
+
+.hero-title {
+    margin: 0;
+    color: #111111;
+    font-size: clamp(3.5rem, 5.3vw, 5.7rem);
+    line-height: 0.95;
+    font-weight: 900;
+    letter-spacing: -0.055em;
+}
+
+    .hero-title span {
+        display: block;
+        color: #7137e8;
+        margin-top: 8px;
+    }
+
+
+/* =========================================================
+   CARGO
+   ========================================================= */
+
+.hero-role {
+    margin: 30px 0 20px;
+    color: #171717;
+    font-size: clamp(1.35rem, 2vw, 2rem);
+    line-height: 1.3;
+    font-weight: 700;
+}
+
+    .hero-role span {
+        color: #7137e8;
+        margin: 0 8px;
+    }
+
+
+/* =========================================================
+   DESCRIPCIÓN
+   ========================================================= */
+
+.hero-description {
+    max-width: 760px;
+    margin: 0;
+    color: #596273;
+    font-size: 1.12rem;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   TECNOLOGÍAS
+   ========================================================= */
+
+.hero-technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 28px;
+}
+
+    .hero-technologies span {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 82px;
+        height: 48px;
+        padding: 0 20px;
+        border: 1px solid rgba(113, 55, 232, 0.22);
+        border-radius: 30px;
+        background: rgba(255, 255, 255, 0.9);
+        color: #5f2dd6;
+        font-weight: 700;
+        box-shadow: 0 8px 25px rgba(113, 55, 232, 0.08);
+        transition: all 0.3s ease;
+    }
+
+        .hero-technologies span:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 30px rgba(113, 55, 232, 0.15);
+        }
+
+
+/* =========================================================
+   BOTONES
+   ========================================================= */
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 32px;
+}
+
+    .hero-buttons a {
+        min-width: 190px;
+        height: 58px;
+        padding: 0 25px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 12px;
+        text-decoration: none;
+        font-size: 1rem;
+        font-weight: 700;
+        transition: all 0.3s ease;
+    }
+
+    .hero-buttons .btn-primary-custom {
+        background: linear-gradient(135deg, #7137e8, #8b4df3);
+        color: #ffffff;
+        border: 2px solid #7137e8;
+        box-shadow: 0 12px 25px rgba(113, 55, 232, 0.22);
+    }
+
+        .hero-buttons .btn-primary-custom:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 16px 32px rgba(113, 55, 232, 0.3);
+        }
+
+    .hero-buttons .btn-outline-custom {
+        background: #ffffff;
+        color: #7137e8;
+        border: 2px solid #7137e8;
+    }
+
+        .hero-buttons .btn-outline-custom:hover {
+            background: #7137e8;
+            color: #ffffff;
+            transform: translateY(-3px);
+        }
+
+
+/* =========================================================
+   ELEMENTO VISUAL
+   ========================================================= */
+
+.hero-visual {
+    position: relative;
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* CÍRCULOS DECORATIVOS */
+
+.hero-circle {
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.circle-one {
+    width: 430px;
+    height: 430px;
+    top: 30px;
+    right: 5px;
+    border: 1px solid rgba(113, 55, 232, 0.18);
+    background: radial-gradient( circle, rgba(113, 55, 232, 0.11), rgba(113, 55, 232, 0.02) 65%, transparent 70% );
+}
+
+.circle-two {
+    width: 300px;
+    height: 300px;
+    bottom: 5px;
+    right: 75px;
+    background: rgba(113, 55, 232, 0.06);
+}
+
+
+/* =========================================================
+   TARJETA DE CÓDIGO
+   ========================================================= */
+
+.code-card {
+    position: relative;
+    z-index: 10;
+    width: min(100%, 510px);
+    border-radius: 18px;
+    overflow: hidden;
+    background: #111111;
+    border: 1px solid rgba(113, 55, 232, 0.45);
+    box-shadow: 0 30px 70px rgba(20, 10, 40, 0.25), 0 0 50px rgba(113, 55, 232, 0.14);
+    transform: translateY(-15px);
+}
+
+
+/* ENCABEZADO */
+
+.code-header {
+    height: 54px;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    padding: 0 18px;
+    border-bottom: 1px solid #292929;
+    background: #181818;
+}
+
+    .code-header span {
+        width: 13px;
+        height: 13px;
+        border-radius: 50%;
+        background: #8b5cf6;
+    }
+
+        .code-header span:nth-child(2) {
+            opacity: 0.75;
+        }
+
+        .code-header span:nth-child(3) {
+            opacity: 0.55;
+        }
+
+
+/* CÓDIGO */
+
+.code-content {
+    padding: 32px 30px 35px;
+    font-family: "Consolas", "Courier New", monospace;
+    font-size: 1rem;
+    line-height: 2;
+    color: #e5e7eb;
+}
+
+    .code-content p {
+        margin: 0;
+    }
+
+.code-indent {
+    padding-left: 28px;
+}
+
+.code-purple {
+    color: #a78bfa;
+}
+
+.code-white {
+    color: #f5f5f5;
+}
+
+
+/* =========================================================
+   ESTADÍSTICAS
+   ========================================================= */
+
+.stats-section {
+    position: relative;
+    padding: 35px 0 55px;
+    background: #ffffff;
+}
+
+.stat-item {
+    min-height: 95px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    padding: 15px 20px;
+}
+
+.stat-icon {
+    width: 55px;
+    height: 55px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    background: rgba(113, 55, 232, 0.09);
+    color: #7137e8;
+    font-size: 1.7rem;
+}
+
+.stat-item h3 {
+    margin: 0;
+    color: #161616;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.stat-item p {
+    margin: 3px 0 0;
+    color: #687184;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+
+/* =========================================================
+   ANIMACIÓN
+   ========================================================= */
+
+.fade-in {
+    animation: heroFadeIn 0.8s ease both;
+}
+
+.hero-visual {
+    animation: visualFadeIn 1s ease 0.15s both;
+}
+
+@keyframes heroFadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(-25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes visualFadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 991px) {
+
+    .hero-section {
+        padding: 60px 0 30px;
+    }
+
+    .hero-row {
+        min-height: auto;
+    }
+
+    .hero-content {
+        text-align: center;
+    }
+
+    .hero-subtitle {
+        justify-content: center;
+    }
+
+    .hero-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-technologies {
+        justify-content: center;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-visual {
+        min-height: 430px;
+        margin-top: 45px;
+    }
+
+    .circle-one {
+        right: 50%;
+        transform: translateX(50%);
+    }
+
+    .circle-two {
+        right: 50%;
+        transform: translateX(50%);
+    }
+}
+
+
+/* =========================================================
+   MÓVIL
+   ========================================================= */
+
+@media (max-width: 576px) {
+
+    .hero-section {
+        min-height: auto;
+        padding: 45px 0 25px;
+    }
+
+    .hero-subtitle {
+        margin-bottom: 18px;
+        font-size: 0.95rem;
+        letter-spacing: 0.2em;
+    }
+
+        .hero-subtitle::after {
+            width: 65px;
+        }
+
+    .hero-title {
+        font-size: clamp(2.7rem, 12vw, 4rem);
+        line-height: 0.98;
+    }
+
+        .hero-title span {
+            margin-top: 5px;
+        }
+
+    .hero-role {
+        margin-top: 22px;
+        font-size: 1.2rem;
+    }
+
+        .hero-role span {
+            display: none;
+        }
+
+    .hero-description {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    .hero-technologies {
+        gap: 8px;
+        margin-top: 22px;
+    }
+
+        .hero-technologies span {
+            min-width: auto;
+            height: 43px;
+            padding: 0 15px;
+            font-size: 0.9rem;
+        }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        margin-top: 28px;
+    }
+
+        .hero-buttons a {
+            width: 100%;
+            max-width: 320px;
+            min-width: 0;
+            height: 56px;
+        }
+
+    .hero-visual {
+        min-height: 350px;
+        margin-top: 35px;
+    }
+
+    .circle-one {
+        width: 300px;
+        height: 300px;
+    }
+
+    .circle-two {
+        width: 210px;
+        height: 210px;
+    }
+
+    .code-card {
+        width: 94%;
+        transform: translateY(-5px);
+    }
+
+    .code-content {
+        padding: 24px 20px 26px;
+        font-size: 0.78rem;
+        line-height: 1.9;
+    }
+
+    .code-indent {
+        padding-left: 16px;
+    }
+
+    .stats-section {
+        padding: 20px 0 45px;
+    }
+
+    .stat-item {
+        justify-content: flex-start;
+        max-width: 320px;
+        margin: 0 auto;
+    }
+}
+/* =========================================================
+   COMPOSICIÓN VISUAL DERECHA
+   ========================================================= */
+
+.workspace-decoration {
+    position: absolute;
+    width: 100%;
+    height: 280px;
+    left: 0;
+    bottom: -105px;
+    pointer-events: none;
+    z-index: 2;
+}
+
+
+/* =========================================================
+   LAPTOP
+   ========================================================= */
+
+.laptop {
+    position: absolute;
+    width: 330px;
+    height: 215px;
+    right: -5px;
+    bottom: 20px;
+    z-index: 3;
+    transform: perspective(800px) rotateY(-5deg);
+}
+
+.laptop-screen {
+    position: absolute;
+    width: 100%;
+    height: 195px;
+    padding: 18px;
+    border: 5px solid #242424;
+    border-radius: 14px 14px 5px 5px;
+    background: #111111;
+    box-shadow: 0 20px 40px rgba(20, 10, 40, 0.28), 0 0 35px rgba(113, 55, 232, 0.15);
+}
+
+.laptop-camera {
+    position: absolute;
+    top: 7px;
+    left: 50%;
+    width: 5px;
+    height: 5px;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    background: #7137e8;
+}
+
+.laptop-code {
+    margin-top: 18px;
+    color: #eeeeee;
+    font-family: "Consolas", "Courier New", monospace;
+    font-size: 0.65rem;
+    line-height: 1.7;
+}
+
+    .laptop-code span {
+        color: #a78bfa;
+    }
+
+.laptop-base {
+    position: absolute;
+    width: 108%;
+    height: 18px;
+    left: -4%;
+    bottom: 0;
+    border-radius: 0 0 18px 18px;
+    background: linear-gradient( to bottom, #d9d9df, #a8a8b0 );
+    box-shadow: 0 15px 25px rgba(20, 10, 40, 0.18);
+}
+
+    .laptop-base::after {
+        content: "";
+        position: absolute;
+        width: 90px;
+        height: 5px;
+        left: 50%;
+        top: 5px;
+        transform: translateX(-50%);
+        border-radius: 10px;
+        background: #8f8f98;
+    }
+
+
+/* =========================================================
+   PLANTA
+   ========================================================= */
+
+.plant {
+    position: absolute;
+    left: 15px;
+    bottom: 40px;
+    width: 105px;
+    height: 150px;
+    z-index: 6;
+}
+
+.plant-leaf {
+    position: absolute;
+    width: 24px;
+    height: 70px;
+    border-radius: 100% 0 100% 0;
+    background: linear-gradient( 135deg, #6f5b9f, #8d78bc );
+    transform-origin: bottom center;
+}
+
+.leaf-one {
+    left: 42px;
+    bottom: 48px;
+    transform: rotate(-8deg);
+}
+
+.leaf-two {
+    left: 25px;
+    bottom: 45px;
+    transform: rotate(-35deg);
+}
+
+.leaf-three {
+    left: 58px;
+    bottom: 48px;
+    transform: rotate(25deg);
+}
+
+.leaf-four {
+    left: 10px;
+    bottom: 35px;
+    transform: rotate(-55deg);
+}
+
+.leaf-five {
+    left: 72px;
+    bottom: 38px;
+    transform: rotate(50deg);
+}
+
+.plant-pot {
+    position: absolute;
+    width: 65px;
+    height: 48px;
+    left: 20px;
+    bottom: 5px;
+    border-radius: 5px 5px 18px 18px;
+    background: linear-gradient( 135deg, #ffffff, #dddddf );
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+    .plant-pot::before {
+        content: "";
+        position: absolute;
+        width: 75px;
+        height: 10px;
+        left: -5px;
+        top: -5px;
+        border-radius: 50%;
+        background: #eeeeef;
+    }
+
+
+/* =========================================================
+   TAZA
+   ========================================================= */
+
+.coffee-cup {
+    position: absolute;
+    left: 105px;
+    bottom: 38px;
+    width: 105px;
+    height: 90px;
+    z-index: 7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px 8px 25px 25px;
+    background: #ffffff;
+    box-shadow: 0 15px 30px rgba(20, 10, 40, 0.13);
+}
+
+    .coffee-cup::after {
+        content: "";
+        position: absolute;
+        width: 25px;
+        height: 40px;
+        right: -20px;
+        top: 22px;
+        border: 7px solid #ffffff;
+        border-left: none;
+        border-radius: 0 20px 20px 0;
+    }
+
+    .coffee-cup span {
+        color: #242424;
+        text-align: center;
+        font-size: 0.57rem;
+        font-weight: 800;
+        line-height: 1.35;
+    }
+
+
+/* =========================================================
+   LIBRETA
+   ========================================================= */
+
+.notebook {
+    position: absolute;
+    left: 55px;
+    bottom: -15px;
+    width: 190px;
+    height: 65px;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px;
+    border-radius: 5px;
+    background: #f5f5f7;
+    box-shadow: 0 15px 25px rgba(20, 10, 40, 0.13);
+    transform: rotate(-7deg);
+}
+
+    .notebook strong {
+        color: #45404f;
+        font-size: 0.55rem;
+        line-height: 1.35;
+        letter-spacing: 0.04em;
+    }
+
+
+/* =========================================================
+   MENSAJE
+   ========================================================= */
+
+.workspace-message {
+    position: absolute;
+    right: 0;
+    bottom: -25px;
+    z-index: 8;
+    padding: 16px 22px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.94);
+    border: 1px solid rgba(113, 55, 232, 0.18);
+    box-shadow: 0 15px 35px rgba(20, 10, 40, 0.12);
+    text-align: left;
+}
+
+    .workspace-message span,
+    .workspace-message strong {
+        display: block;
+    }
+
+    .workspace-message span {
+        color: #646b7b;
+        font-size: 0.65rem;
+        letter-spacing: 0.08em;
+    }
+
+    .workspace-message strong {
+        margin-top: 3px;
+        color: #7137e8;
+        font-size: 0.8rem;
+        letter-spacing: 0.05em;
+    }
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 991px) {
+
+    .workspace-decoration {
+        position: relative;
+        height: 320px;
+        bottom: auto;
+        margin-top: 15px;
+    }
+
+    .laptop {
+        right: 5%;
+    }
+
+    .workspace-message {
+        right: 2%;
+    }
+}
+
+
+/* =========================================================
+   MÓVIL
+   ========================================================= */
+
+@media (max-width: 576px) {
+
+    .workspace-decoration {
+        height: 280px;
+        margin-top: 0;
+    }
+
+    .laptop {
+        width: 255px;
+        height: 170px;
+        right: 0;
+        bottom: 25px;
+    }
+
+    .laptop-screen {
+        height: 150px;
+    }
+
+    .laptop-code {
+        font-size: 0.5rem;
+    }
+
+    .plant {
+        transform: scale(0.65);
+        transform-origin: bottom left;
+        left: -5px;
+    }
+
+    .coffee-cup {
+        transform: scale(0.65);
+        transform-origin: bottom left;
+        left: 55px;
+    }
+
+    .notebook {
+        transform: scale(0.65) rotate(-7deg);
+        transform-origin: bottom left;
+        left: 25px;
+    }
+
+    .workspace-message {
+        right: 0;
+        bottom: -5px;
+        padding: 10px 14px;
+    }
+
+        .workspace-message span {
+            font-size: 0.55rem;
+        }
+
+        .workspace-message strong {
+            font-size: 0.68rem;
+        }
+}
+
+/* =========================================================
+   AJUSTE FINAL DE LA COMPOSICIÓN VISUAL
+   ========================================================= */
+
+.hero-section {
+    overflow: hidden;
+    min-height: 720px;
+}
+
+.hero-row {
+    min-height: 620px;
+}
+
+
+/* =========================================================
+   ELEMENTO VISUAL
+   ========================================================= */
+
+.hero-visual {
+    position: relative;
+    min-height: 560px;
+}
+
+
+    /* =========================================================
+   VENTANA PRINCIPAL DE CÓDIGO
+   ========================================================= */
+
+    .hero-visual .code-card {
+        position: absolute;
+        top: 25px;
+        right: 15px;
+        width: 420px;
+        max-width: 420px;
+        z-index: 10;
+        transform: none;
+    }
+
+    .hero-visual .code-header {
+        height: 48px;
+    }
+
+    .hero-visual .code-content {
+        padding: 24px 25px 28px;
+        font-size: 0.82rem;
+        line-height: 1.75;
+    }
+
+    .hero-visual .code-indent {
+        padding-left: 18px;
+    }
+
+
+    /* =========================================================
+   CÍRCULOS
+   ========================================================= */
+
+    .hero-visual .circle-one {
+        width: 440px;
+        height: 440px;
+        top: 0;
+        right: -5px;
+    }
+
+    .hero-visual .circle-two {
+        width: 285px;
+        height: 285px;
+        right: 75px;
+        bottom: 5px;
+    }
+
+
+    /* =========================================================
+   WORKSPACE
+   ========================================================= */
+
+    .hero-visual .workspace-decoration {
+        position: absolute;
+        width: 100%;
+        height: 290px;
+        left: 0;
+        bottom: 15px;
+        z-index: 3;
+    }
+
+    /* =========================================================
+   LAPTOP
+   ========================================================= */
+
+    .hero-visual .laptop {
+        width: 360px;
+        height: 235px;
+        right: -5px;
+        bottom: 85px;
+    }
+
+    /* PLANTA — más a la izquierda */
+    /* =========================================================
+   AJUSTE FINAL — ELEMENTOS SIN TAPAR LA LAPTOP
+   ========================================================= */
+
+
+    .hero-visual .workspace-message {
+        right: 0;
+        bottom: 35px;
+        z-index: 8;
+    }
+    /* =========================================================
+   MENSAJE
+   ========================================================= */
+
+    .hero-visual .workspace-message {
+        right: 0;
+        bottom: 30px;
+    }
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 991px) {
+
+    .hero-section {
+        min-height: auto;
+        padding-bottom: 50px;
+    }
+
+    .hero-row {
+        min-height: auto;
+    }
+
+    .hero-visual {
+        min-height: 530px;
+        margin-top: 45px;
+    }
+
+        .hero-visual .code-card {
+            width: 410px;
+            max-width: 90%;
+            right: 50%;
+            transform: translateX(50%);
+        }
+
+        .hero-visual .workspace-decoration {
+            bottom: -45px;
+        }
+}
+
+
+/* =========================================================
+   MÓVIL
+   ========================================================= */
+
+@media (max-width: 576px) {
+
+    .hero-section {
+        min-height: auto;
+        padding: 45px 0 55px;
+    }
+
+    .hero-visual {
+        min-height: 470px;
+        margin-top: 40px;
+    }
+
+        .hero-visual .code-card {
+            top: 10px;
+            width: 92%;
+            max-width: 340px;
+            right: 50%;
+            transform: translateX(50%);
+        }
+
+        .hero-visual .code-content {
+            padding: 18px 15px 20px;
+            font-size: 0.63rem;
+            line-height: 1.65;
+        }
+
+        .hero-visual .code-indent {
+            padding-left: 10px;
+        }
+
+        .hero-visual .circle-one {
+            width: 330px;
+            height: 330px;
+            right: 50%;
+            transform: translateX(50%);
+        }
+
+        .hero-visual .circle-two {
+            width: 220px;
+            height: 220px;
+            right: 50%;
+            transform: translateX(50%);
+        }
+
+        .hero-visual .workspace-decoration {
+            height: 250px;
+            bottom: -15px;
+        }
+
+        .hero-visual .laptop {
+            width: 250px;
+            height: 165px;
+            right: 0;
+            bottom: 20px;
+        }
+
+        .hero-visual .laptop-screen {
+            height: 145px;
+        }
+
+        .hero-visual .laptop-code {
+            font-size: 0.48rem;
+        }
+
+
+        .hero-visual .workspace-message {
+            right: 0;
+            bottom: -5px;
+            padding: 10px 14px;
+        }
+
+            .hero-visual .workspace-message span {
+                font-size: 0.55rem;
+            }
+
+            .hero-visual .workspace-message strong {
+                font-size: 0.68rem;
+            }
+}
+
+/* =========================================================
+   AJUSTE FINAL — LAPTOP COMO ELEMENTO PRINCIPAL
+   ========================================================= */
+
+.hero-visual {
+    min-height: 520px;
+}
+
+    .hero-visual .circle-one {
+        width: 400px;
+        height: 400px;
+        top: 20px;
+        right: 5px;
+    }
+
+    .hero-visual .circle-two {
+        width: 240px;
+        height: 240px;
+        right: 85px;
+        bottom: 45px;
+    }
+
+
+    /* LAPTOP */
+
+    .hero-visual .laptop {
+        width: 360px;
+        height: 235px;
+        right: -5px;
+        bottom: 75px;
+    }
+
+
+    
+/* =========================================================
+   MÓVIL
+   ========================================================= */
+
+@media (max-width: 576px) {
+
+    .hero-visual {
+        min-height: 430px;
+    }
+
+        .hero-visual .circle-one {
+            width: 320px;
+            height: 320px;
+            right: 50%;
+            transform: translateX(50%);
+        }
+
+        .hero-visual .circle-two {
+            width: 200px;
+            height: 200px;
+            right: 50%;
+            transform: translateX(50%);
+            bottom: 40px;
+        }
+
+        .hero-visual .laptop {
+            width: 270px;
+            height: 175px;
+            right: auto;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 55px;
+        }
+
+        .hero-visual .laptop-screen {
+            height: 155px;
+        }
+
+        .hero-visual .laptop-code {
+            font-size: 0.5rem;
+        }
+
+
+
+
+    /* =========================================================
+   AJUSTE — SUBIR TODO EL HERO
+   ========================================================= */
+
+    .hero-section {
+        padding-top: 35px !important;
+    }
+
+    .hero-row {
+        min-height: 600px;
+    }
+
+    .hero-content {
+        transform: translateY(-35px);
+    }
+
+    .hero-visual {
+        transform: translateY(-45px);
+    }
+
+
+        /* =========================================================
+   COMPOSICIÓN DERECHA
+   ========================================================= */
+
+        .hero-visual .workspace-decoration {
+            bottom: 35px;
+        }
+
+        .hero-visual .laptop {
+            bottom: 105px;
+        }
+
+    /* =========================================================
+   MÓVIL
+   ========================================================= */
+
+    @media (max-width: 576px) {
+
+        .hero-section {
+            padding-top: 25px !important;
+        }
+
+        .hero-content {
+            transform: none;
+        }
+
+        .hero-visual {
+            transform: none;
+        }
+
+            .hero-visual .workspace-decoration {
+                bottom: 10px;
+            }
+
+            .hero-visual .laptop {
+                bottom: 60px;
+            }
+    }
+
+    /* =========================================================
+   AJUSTE FINAL — COMPOSICIÓN DEL ESCRITORIO
+   ========================================================= */
+
+    .hero-visual {
+        position: relative;
+    }
+
+        /* ESCRITORIO DECORATIVO */
+        .hero-visual .workspace-decoration {
+            position: absolute;
+            width: 100%;
+            height: 290px;
+            left: 0;
+            bottom: 70px;
+            z-index: 3;
+        }
+
+
+        /* LAPTOP */
+        .hero-visual .laptop {
+            width: 360px;
+            height: 235px;
+            right: -5px;
+            bottom: 105px;
+            z-index: 3;
+        }
+
+
+    /* =========================================================
+   MÓVIL
+   ========================================================= */
+
+    @media (max-width: 576px) {
+
+        .hero-visual .workspace-decoration {
+            height: 250px;
+            bottom: 15px;
+        }
+
+        .hero-visual .laptop {
+            width: 270px;
+            height: 175px;
+            right: 0;
+            bottom: 65px;
+        }
+    }
+   

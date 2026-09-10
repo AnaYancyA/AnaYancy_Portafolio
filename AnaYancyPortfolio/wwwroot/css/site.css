@@ -650,7 +650,7 @@ a {
 .about-section {
     position: relative;
     background: #ffffff;
-    padding: 60px 0 70px;
+    padding: 60px 0 110px;
     overflow: hidden;
 }
 
@@ -1261,10 +1261,11 @@ textarea.form-control {
 
 }
 
-.hero-section {
-    padding: 45px 0 55px;
-    min-height: auto;
-}
+    .hero-section {
+        padding: 45px 0 90px;
+        min-height: auto;
+    }
+
 .hero-subtitle {
     font-size: 1rem;
     letter-spacing: 3px;
